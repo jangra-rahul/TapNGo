@@ -155,12 +155,9 @@ const Support = () => {
                 <div className="d-flex mt-3 cusor gap-3 rounded-3">
                   <div className="fs_18  fw-semibold  red_ff text-dark">
                     <div
-                      variant={showOpenTickets ? "link" : ""}
-                      className={
-                        showOpenTickets
-                          ? " support-page-active cusor "
-                          : "text-dark"
-                      }
+                      className={`fs_18 fw-semibold red_ff text-dark ${
+                        showOpenTickets ? "support-page-active" : ""
+                      }`}
                       onClick={() => setShowOpenTickets(true)}
                     >
                       <p className=" fs_13 red_ff fw-semibold mb-2">
@@ -170,12 +167,9 @@ const Support = () => {
                     </div>
                   </div>
                   <div
-                    variant={!showOpenTickets ? "link" : ""}
-                    className={
-                      !showOpenTickets
-                        ? "support-page-active cusor"
-                        : "text-dark"
-                    }
+                    className={`fs_18 fw-semibold red_ff text-dark ${
+                      !showOpenTickets ? "support-page-active" : ""
+                    }`}
                     onClick={() => setShowOpenTickets(false)}
                   >
                     <p className=" fs_13 red_ff fw-semibold mb-2">

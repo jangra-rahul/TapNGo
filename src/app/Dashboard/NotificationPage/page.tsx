@@ -90,9 +90,8 @@ const NotificationPage = () => {
             <div style={{ height: "460px", overflow: "auto" }}>
               <Row className=" d-flex bg-white py-3 mx-2  text-dark  ">
                 {notifications.map((notification, index) => (
-                  <div>
+                  <div key={index}>
                     <Row
-                      key={index}
                       className={`border cursor-pointer mt-3 align-items-center common-border d-flex justify-content-between rounded-3 p-2 bg-white ${
                         selectedRow === index ? "selected-tr" : "bg-primary "
                       }`}
