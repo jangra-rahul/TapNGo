@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../src//assets/fonts/SourceSansPro-Bold.otf);
+  src: url(../src//assets/fonts/SourceSansPro-Regular.otf);
+  src: url(../src//assets/fonts/SourceSansPro-Semibold.otf);
+}
+
+.source_ff {
+  font-family: "SourceSansPro";
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.red_ff {
+  font-family: "Red Hat Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
+}
+
+
+:root {
+  /* -------------------- Font-Size -------------------- */
+  --fs-xsm: 13px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 22px;
+  --fs-3xl: 24px;
+  --fs-4xl: 36px;
+  --fs-5xl: 40px;
+  --fs-6xl: 32px;
+  --fs-7xl:28px;
+  /* ---------------------- Color ---------------------- */
+  --clr-primary: #1364f1;
+  --clr-lightblack: #151515;
+  /* ----------------- Background Color ----------------- */
+  --bg-theme: #021536;
+}
+
+.fs_13 {
+  font-size: var(--fs-xsm);
+}
+.fs_14 {
+  font-size: var(--fs-sm);
+}
+.fs_16 {
+  font-size: var(--fs-md);
+}
+.fs_18 {
+  font-size: var(--fs-lg);
+}
+.fs_20 {
+  font-size: var(--fs-xl);
+}
+.fs_22 {
+  font-size: var(--fs-2xl);
+}
+.fs_24 {
+  font-size: var(--fs-3xl);
+}
+.fs_36 {
+  font-size: var(--fs-4xl);
+}
+.fs_40 {
+  font-size: var(--fs-5xl);
+}
+.fs_32 {
+  font-size: var(--fs-6xl);
+}
+.fs_28 {
+  font-size: var(--fs-7xl);
+}
+
+.color_blue {
+  color: var(--clr-primary) !important;
+}
+.color_lightblack {
+  color: var(--clr-lightblack);
+}
+.bg_theme {
+  background-color: var(--bg-theme);
+}
+
+/* Css */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.common-border{
+  border: 1px solid #CECECE4D;
+}
+.common-button{
+  background-color: #1364f1;
+  color: white;
+  font: 600;
+  font-size: 16px;
+
+}
+
+@media (max-width: 576px) {
+  :root {
+    /* -------------------- Font-Size -------------------- */
+    --fs-xsm: 13px;
+    --fs-sm: 14px;
+    --fs-md: 12px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-2xl: 22px;
+    --fs-3xl: 24px;
+    --fs-4xl: 36px;
+    --fs-5xl: 40px;
+  }
+}

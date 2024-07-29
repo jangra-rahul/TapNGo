@@ -1,0 +1,188 @@
+.w-40 {
+  width: 40%;
+}
+.w-70 {
+  width: 70%;
+}
+.text-color {
+  color: #202020bf;
+}
+.vertical-divider {
+  border-left: 1px solid #ddd;
+  height: 100%;
+  margin: 0 15px;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+.line-margin {
+  margin-right: 9rem !important;
+  margin-left: 9rem !important;
+}
+.custom-Modal2 {
+  position: absolute;
+  top: 30%;
+  left: 8%;
+}
+.custom-background-white {
+  background-color: white !important;
+}
+.bg_yellow {
+  background-color: #ffca00;
+}
+.postpaid-button {
+  background-color: #1364f11a;
+  color: #1364f1;
+}
+.C-pointer {
+  cursor: pointer;
+}
+.custom-modal-width {
+  width: 800px;
+}
+
+.custom-modal-width .modal-body {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .custom-Modal2 {
+    position: fixed;
+    top: 40%;
+    left: 1%;
+  }
+}
+@media (max-width: 768px) {
+  .text-sm {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .gap-sm-2 {
+    gap: 10px !important;
+  }
+}
+@media (max-width: 768px) {
+  .sm-d-flex {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 768px) {
+  .margin-right-0 {
+    margin-right: 0px !important;
+    padding: 0px !important;
+  }
+}
+@media (max-width: 768px) {
+  .sm-fs_14 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .sm-w-100 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  .responive-display {
+    display: grid;
+  }
+}
+@media (max-width: 768px) {
+  .custom-flex {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}
+.active {
+  border-bottom: 2px solid #007bff; /* blue color */
+  padding-bottom: 5px;
+}
+
+.size-small {
+  height: 120px;
+  width: 150px;
+}
+
+.custom_plus_width {
+  width: 30px !important;
+}
+.circle {
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+}
+.font-color1 {
+  color: #202020bf;
+}
+.bg-0 {
+  background-color: #ff8282;
+  border: 2px solid #a02121;
+}
+.bg-1 {
+  background-color: #59c3ff;
+}
+.bg-2 {
+  background-color: #ffef61;
+}
+.bg-3 {
+  background-color: #f4b1ff;
+}
+.bg-4 {
+  background-color: #9bffed;
+}
+.bg-5 {
+  background-color: #f3f3f3;
+}
+.bg-6 {
+  background-color: #131313;
+}
+.top-up-button {
+  background-color: #e7f0fe;
+  color: #1364f1;
+  border: 1px solid #1364f1;
+}
+.button-color {
+  background-color: #1364f1 !important;
+}
+.w-22 {
+  width: 22px !important;
+  height: 22px !important;
+}
+.w-22 {
+  width: 20% !important;
+}
+
+/* Global styles */
+.circle {
+  width: 40px;
+  height: 40px;
+}
+
+/* profile.css */
+
+@media (max-width: 768px) {
+  .responsive-display {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsive-display.flex-md-row {
+    flex-direction: row !important;
+  }
+  .responsive-display .form-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .responsive-display .form-group:last-child {
+    margin-right: 0;
+  }
+  .postpaid-button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}

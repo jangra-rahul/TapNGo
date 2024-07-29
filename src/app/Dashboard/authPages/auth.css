@@ -1,0 +1,113 @@
+.custom_auth_header_width {
+  max-width: 400px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.custom_border {
+  border-color: #1364f1 !important;
+}
+
+input {
+  outline: none !important;
+}
+
+.bg_blue {
+  background-color: #1364f1;
+}
+
+.tdn {
+  text-decoration: underline !important ;
+}
+
+.modal-dialog {
+  padding: 20px;
+}
+
+.modal-content {
+  padding: 5px !important;
+}
+
+.skip_btn {
+  border: 1px solid rgba(19, 100, 241, 1);
+  padding: 7px 0;
+  background-color: transparent !important;
+}
+
+.custom_width {
+  max-width: 450px !important;
+  width: 100%;
+}
+
+.verify_input {
+  padding: 0px 10px;
+  font-size: 35px !important;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 10px !important;
+  }
+  .modal-dialog {
+    padding: 0px;
+  }
+}
+/* Add this to your custom CSS file */
+.custom-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.custom-form-group {
+  margin-bottom: 1rem;
+}
+
+.custom-button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.custom-link {
+  color: blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+.custom-paragraph {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+@media (max-width: 576px) {
+  .custom-container {
+    padding: 1rem;
+  }
+
+  .custom-form-group {
+    margin-bottom: 0.75rem;
+  }
+
+  .custom-button {
+    margin-top: 1rem;
+  }
+
+  .custom-checkbox {
+    font-size: 0.875rem;
+  }
+}

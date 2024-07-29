@@ -1,0 +1,100 @@
+.site-layout .site-layout-background {
+  background: #f0f0f1;
+}
+.custom-background {
+  background-color: #f0f0f1;
+}
+.active-color {
+  background-color: #fbfbfb37 !important;
+}
+.logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.w-20 {
+  width: 20% !important;
+}
+.header-responsive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bg-sidebar {
+  background-color: #021536;
+}
+.footer {
+  text-align: center;
+  background-color: #021536;
+  color: white;
+  padding: 10px 0;
+  position: absolute;
+  bottom: 0;
+}
+.line-height {
+  line-height: 0px !important;
+}
+
+.menu-button {
+  display: none;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-layout .ant-layout-sider {
+  background-color: #021536 !important;
+}
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-dark,
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-dark > .ant-menu {
+  background-color: #021536 !important;
+}
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-dark
+  .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-dark
+  > .ant-menu
+  .ant-menu-item-selected {
+  background-color: #021536 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-inline .ant-menu-item,
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-vertical .ant-menu-item,
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-inline
+  .ant-menu-submenu-title,
+:where(.css-dev-only-do-not-override-zg0ahe).ant-menu-vertical
+  .ant-menu-submenu-title {
+  margin: 10px 0px 0px 0px !important;
+}
+
+.site-layout .site-layout-background {
+  background-color: #f0f0f1 !important;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-layout-header {
+  height: 80px !important;
+}
+:where(.css-dev-only-do-not-override-zg0ahe).ant-drawer .ant-drawer-content {
+  background-color: #021536 !important;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-drawer .ant-drawer-header {
+  display: none !important;
+}
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-drawer .ant-drawer-content {
+  width: 70% !important;
+}
+
+@media (max-width: 992px) {
+  .header-responsive .menu-button {
+    display: grid;
+  }
+  .sider-responsive {
+    display: none;
+  }
+  .drawer-responsive .ant-drawer-body {
+    padding: 0;
+  }
+}

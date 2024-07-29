@@ -1,0 +1,126 @@
+.active-button{
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 8px;
+}
+.bg-lightblue{
+    background-color: #E7F0FE;
+}
+.light-text-color{
+  color:#525458;
+}
+.dashboard-text-color{
+  color: #202020;
+}
+.border-color{
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+  }
+
+.size-small{
+  height: 120px;
+  width: 150px;
+}
+  
+.custom_plus_width{
+  width: 30px !important;
+}
+.circle{
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+}
+
+.bg-0{
+  background-color: #FF8282 ;
+  border: 2px solid #A02121;
+}
+.bg-1{
+  background-color: #59C3FF ;
+}
+.bg-2{
+  background-color:  #FFEF61;
+}
+.bg-3{
+  background-color:#F4B1FF;
+  
+}
+.bg-4{
+  background-color:#9BFFED;
+}
+.bg-5{
+  background-color:#F3F3F3;
+}
+.bg-6{
+  background-color:#131313;
+}
+.top-up-button{
+  background-color: #E7F0FE;
+  color: #1364F1;
+  border: 1px solid #1364F1;
+}
+.button-color{
+  background-color: #1364F1 !important;
+}
+.w-22{
+  width:22px !important;
+  height: 22px !important;
+}
+.w-22{
+  width: 20% !important;
+}
+
+/* Global styles */
+.circle {
+  width: 40px; 
+  height: 40px;
+  margin: 10px; 
+}
+
+/* Style for the input field */
+.custom-input {
+  position: relative;
+  padding-left: 20px; /* Adjust padding as needed to move placeholder */
+
+}
+
+/* Style for the placeholder text */
+.custom-input::placeholder {
+  color: green; /* Change the placeholder text color */
+  transform: translateY(-50%); /* Adjust the vertical position if needed */
+  position: absolute;
+  margin-left: 20% !important; /* Adjust the horizontal position as needed */
+}
+
+.d-flex.flex-wrap {
+  flex-wrap: nowrap;
+}
+@media (max-width: 769px) {
+  .wid-smal-50 {
+    width: 50% !important;
+  }
+}
+@media (max-width: 769px) {
+  .fs-sm-10 {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 769px) {
+  .padding-left {
+    padding-left: 3.5rem !important;
+  }
+}
+@media (max-width: 769px) {
+  .custom-margin-left {
+   margin-left: 6px !important;
+   gap: 1.3rem;
+  }
+}
+@media (max-width: 769px) {
+  .wid-smal-100 {
+    width: 100% !important;
+  }
+}
+.small-modal .modal-dialog {
+  max-width: 350px;
+}

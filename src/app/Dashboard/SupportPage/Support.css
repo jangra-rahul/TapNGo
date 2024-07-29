@@ -1,0 +1,126 @@
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  color: var(
+    --bs-table-color-state,
+    var(--bs-table-color-type, var(--bs-table-color))
+  );
+  background-color: none;
+  border-bottom-width: var(--bs-border-width);
+}
+.border-rounded {
+  border-radius: 10px !important;
+}
+.dashboard-text-color {
+  color: #202020;
+}
+.support-light-color {
+  color: #585858;
+}
+.support-page-active {
+  color: #007bff;
+  border-bottom: 2px solid #007bff !important; /* blue color */
+  padding-bottom: 0.5px;
+}
+.attachment {
+  max-width: 200px;
+}
+
+.file_btn {
+  border: 2px dashed #1364f1 !important;
+  background: #e7effe;
+  color: #1364f1 !important;
+}
+
+.cusor {
+  cursor: pointer !important;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  color: var(
+    --bs-table-color-state,
+    var(--bs-table-color-type, var(--bs-table-color))
+  );
+  background-color: var(--bs-table-bg);
+  border-bottom-width: var(--bs-border-width);
+  box-shadow: none;
+}
+.table th {
+  text-align: start;
+  vertical-align: middle;
+  padding: 10px;
+  border-bottom-width: medium;
+}
+.table td {
+  text-align: start;
+  vertical-align: middle;
+  padding: 10px;
+  border-radius: 5%;
+  border-bottom-width: medium;
+}
+.font-color {
+  color: #f79e1b;
+}
+.Progress-button {
+  background-color: #0e80291a;
+  color: #0e8029;
+  border: none;
+}
+.Action-button {
+  background-color: #fffae5;
+  color: #f79f1a;
+  border: none;
+}
+.bg-pdf {
+  background-color: #f3f3f399;
+}
+.initial {
+  background-color: #f8f8f8;
+  color: #151515;
+}
+
+@media (max-width: 768px) {
+  .responsive-botton {
+    display: flex;
+    align-items: flex-start;
+    padding: 2px 2px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .sm-fs-10 {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .fs-sm-20 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .p-sm-0 {
+    padding: 0px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-dir-col {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .text-sm-nowrap {
+    text-wrap: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .sm-w-50 {
+    width: 53% !important;
+  }
+}
+@media (max-width: 768px) {
+  .d-sm-flex {
+    display: flex;
+    gap: 5px;
+  }
+}
