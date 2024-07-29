@@ -1,6 +1,6 @@
 import React from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
-import Link from 'next/link';
+import Link from "next/link";
 
 const Login = () => {
   return (
@@ -13,7 +13,7 @@ const Login = () => {
             </Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter Corporate Card Number"
+              placeholder=""
               className=" border px-3 py-2 rounded-2 border-body border-2"
             />
           </Form.Group>
@@ -24,7 +24,7 @@ const Login = () => {
             </Form.Label>
             <Form.Control
               type="number"
-              placeholder="Enter Mobile Number"
+              placeholder=""
               className=" border px-3 py-2 rounded-2 border-body border-2"
             />
           </Form.Group>

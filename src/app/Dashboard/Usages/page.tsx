@@ -73,9 +73,10 @@ const Usages: React.FC = () => {
             display: "none",
           },
           className: "custom-legend",
-          align: "cenetr",
+          align: "start",
           position: "top",
         },
+
         scales: {
           xAxes: [
             {

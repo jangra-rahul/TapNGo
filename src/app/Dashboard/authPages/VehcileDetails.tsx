@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Button, Form, Container, Row, Col } from "react-bootstrap";
-import cross_icon from "../../../../public/assets/images/svg/cross_icon.svg"
+import cross_icon from "../../../../public/assets/images/svg/cross_icon.svg";
 import Image from "next/image";
 
 interface Props {
@@ -21,8 +21,8 @@ const VehicleDetails: React.FC<Props> = ({ isModalOpen, closeModal }) => {
         </Button>
         <Modal.Header className="border-0">
           <Modal.Title className="w-100 text-center">
-            <h4 className="mt-3 red_ff fs_24">
-              Wish to attach your vehicle details?
+            <h4 className="mt-3 red_ff fw-semibold fs_24">
+              Wish to attach your vehicle<br></br> details?
             </h4>
           </Modal.Title>
         </Modal.Header>
@@ -34,7 +34,7 @@ const VehicleDetails: React.FC<Props> = ({ isModalOpen, closeModal }) => {
               </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Make"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -45,7 +45,7 @@ const VehicleDetails: React.FC<Props> = ({ isModalOpen, closeModal }) => {
               </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Model"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -56,7 +56,7 @@ const VehicleDetails: React.FC<Props> = ({ isModalOpen, closeModal }) => {
               </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Year"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -67,7 +67,7 @@ const VehicleDetails: React.FC<Props> = ({ isModalOpen, closeModal }) => {
               </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Registration Number"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -76,22 +76,20 @@ const VehicleDetails: React.FC<Props> = ({ isModalOpen, closeModal }) => {
         <Modal.Footer className="border-0 w-100">
           <Row className="w-100">
             <Col xs={6} className="ps-0">
-              <Button
-                variant="outline-primary"
-                className="w-100 py-2 rounded-1 color_blue"
+              <button
+                className="w-100 py-2 rounded-1 bg_light color_blue  border-0"
                 onClick={closeModal}
               >
                 Skip for now
-              </Button>
+              </button>
             </Col>
             <Col xs={6} className="pe-0">
-              <Button
-                variant="primary"
-                className="w-100 bg_blue border-0 py-2 rounded-1 fs_16 text-white source_ff"
+              <button
+                className="w-100 bg-primary border-0  py-2 rounded-1 fs_16 text-white source_ff"
                 onClick={closeModal}
               >
                 Submit
-              </Button>
+              </button>
             </Col>
           </Row>
         </Modal.Footer>

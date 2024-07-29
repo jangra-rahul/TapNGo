@@ -5,6 +5,9 @@
 }
 
 .custom_border {
+  border: 2px solid #1364f1 !important;
+}
+.custom_border1 {
   border-color: #1364f1 !important;
 }
 
@@ -18,6 +21,10 @@ input {
 
 .tdn {
   text-decoration: underline !important ;
+}
+
+.bg_light {
+  background-color: #e7effe !important;
 }
 
 .modal-dialog {
@@ -92,6 +99,11 @@ input {
   margin-top: 1.5rem;
   font-size: 0.875rem;
   color: #555;
+}
+
+.w_40 {
+  max-width: 500px !important;
+  width: 100% !important;
 }
 
 @media (max-width: 576px) {

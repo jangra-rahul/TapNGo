@@ -22,7 +22,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  padding: 10px !important;
   font-size: 1rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;
@@ -39,6 +39,7 @@
 .accordion-item {
   border-radius: 7px !important;
   border: 1px solid #1a273e3f;
+  padding: 10px 10px 0px 10px !important;
 }
 .accordion-body {
   padding: 0 !important;
@@ -46,7 +47,7 @@
   padding-left: 0px;
   padding-left: 10px !important;
   padding-right: 10px !important;
-  border: 1px solid #1a273e3d;
+  border: 0px solid #1a273e3d !important;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: rgba(26, 39, 62, 0.24);

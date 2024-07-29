@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Form, Button, Container, Row, Col, Modal } from "react-bootstrap";
 import VehicleDetails from "../authPages/VehcileDetails";
@@ -16,9 +16,9 @@ const Register = () => {
   };
 
   return (
-    <Container className="mt-4 ">
-      <Form >
-        <Row >
+    <Container className="mt-4">
+      <Form>
+        <Row>
           <Col md={6} className="mb-3">
             <Form.Group controlId="formFirstName">
               <Form.Label className="fs-6 red_ff color_lightblack fw-medium">
@@ -26,7 +26,7 @@ const Register = () => {
               </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter First Name"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -39,7 +39,7 @@ const Register = () => {
               </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Last Name"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -52,7 +52,7 @@ const Register = () => {
               </Form.Label>
               <Form.Control
                 type="email"
-                placeholder="Enter Email Address"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -65,7 +65,7 @@ const Register = () => {
               </Form.Label>
               <Form.Control
                 type="number"
-                placeholder="Enter Mobile Number"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -90,7 +90,7 @@ const Register = () => {
               </Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Corporate Card Number"
+                placeholder=""
                 className=" border px-3 py-2 rounded-2 border-body border-2"
               />
             </Form.Group>
@@ -123,7 +123,7 @@ const Register = () => {
           </Form.Label>
         </Form.Group>
 
-        <p className="red_ff color_lightblack fw-medium mt-3 fs-14">
+        <p className="red_ff color_lightblack text-center fw-medium mt-3 fs-14">
           Already a user?&nbsp;
           <a className="color_blue" href="#">
             Login

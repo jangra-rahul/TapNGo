@@ -17,7 +17,7 @@
   color: #585858;
 }
 .support-page-active {
-  color: #007bff;
+  color: #007bff !important;
   border-bottom: 2px solid #007bff !important; /* blue color */
   padding-bottom: 0.5px;
 }
@@ -77,6 +77,10 @@
 .initial {
   background-color: #f8f8f8;
   color: #151515;
+}
+
+.color_blue {
+  color: #007bff !important;
 }
 
 @media (max-width: 768px) {

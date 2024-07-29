@@ -152,27 +152,26 @@ const Support = () => {
                     </button>
                   </span>
                 </div>
-                <div className="d-flex mt-3 cusor gap-3 rounded-3">
-                  <div className="fs_18  fw-semibold  red_ff text-dark">
+                <div className="d-flex mt-3 cusor gap-4 rounded-3">
+                  <div className="fs_18  fw-semibold  red_ff ">
                     <div
-                      className={`fs_18 fw-semibold red_ff text-dark ${
+                      className={`fs_18 fw-semibold red_ff  ${
                         showOpenTickets ? "support-page-active" : ""
                       }`}
                       onClick={() => setShowOpenTickets(true)}
                     >
-                      <p className=" fs_13 red_ff fw-semibold mb-2">
-                        {" "}
+                      <p className=" fs_16 red_ff  fw-semibold mb-2">
                         Open Tickets
                       </p>
                     </div>
                   </div>
                   <div
-                    className={`fs_18 fw-semibold red_ff text-dark ${
+                    className={`fs_18 fw-semibold red_ff ${
                       !showOpenTickets ? "support-page-active" : ""
                     }`}
                     onClick={() => setShowOpenTickets(false)}
                   >
-                    <p className=" fs_13 red_ff fw-semibold mb-2">
+                    <p className=" fs_16 red_ff fw-semibold mb-2">
                       {" "}
                       Resolved Tickets
                     </p>

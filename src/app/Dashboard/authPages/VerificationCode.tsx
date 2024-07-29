@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useRef, useEffect } from "react";
 import { Modal, Button, Container, Row, Col } from "react-bootstrap";
 import cross_icon from "../../../../public/assets/images/svg/cross_icon.svg";
@@ -38,12 +38,14 @@ const VerificationCode: React.FC<Props> = ({ isModalOpen, closeModal }) => {
   };
 
   const handleModal = () => {
-    closeModal();
     const isFilled = otpValues.every((value) => value !== "");
+    setIsVerifyModalOpen(true);
+    closeModal();
     if (isFilled) {
-      setIsVerifyModalOpen(true);
+      // Open success modal
+      closeModal(); // Close OTP modal
     } else {
-      setOtpValues(["", "", "", "", "", ""]);
+      setOtpValues(["", "", "", "", "", ""]); // Clear OTP values if not all fields are filled
     }
   };
 
@@ -123,11 +125,14 @@ const VerificationCode: React.FC<Props> = ({ isModalOpen, closeModal }) => {
             />
           </a>
           <Modal.Header className="flex-column">
-            <Modal.Title className="text-center  flex-column d-flex mt-3 red_ff fs_24">
+            <Modal.Title className="text-center flex-column d-flex mt-3 red_ff fs_24">
               <div className="d-flex justify-content-center">
                 <Image width={100} src={Success_icon} alt="Success_icon" />
               </div>
-              Verification Successful
+              <h5 className=" fw-semibold red_ff mt-3 fs_20">
+                {" "}
+                Verification Successful
+              </h5>
             </Modal.Title>
             <p className="red_ff mt-2 fs_16 fw-normal text-center mb-0">
               You have successfully verified your mobile number and email

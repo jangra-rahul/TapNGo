@@ -9,18 +9,14 @@ import Share from "../../../../public/assets/images/svg/share.svg";
 import download from "../../../../public/assets/images/svg/download.svg";
 import Image from "next/image";
 
-
 type ComponentType = "Usage" | "Tax Invoice" | "Statements";
 const UsagesList = () => {
- 
   const [showSearchBar, setShowSearchBar] = useState(false);
   const [activeComponent, setActiveComponent] =
     useState<ComponentType>("Usage");
-    const handleSearchClick = () => {
-
-      setShowSearchBar(!showSearchBar);
-    
-    };
+  const handleSearchClick = () => {
+    setShowSearchBar(!showSearchBar);
+  };
   const handleComponentChange = (component: ComponentType) => () =>
     setActiveComponent(component);
   const data = [
@@ -244,7 +240,7 @@ const UsagesList = () => {
       return (
         <table className="table table-responsive">
           <thead>
-            <tr >
+            <tr>
               <th
                 scope="col"
                 className="red-ff fs_16 fw-medium text-start Usage-text-color"
@@ -287,7 +283,7 @@ const UsagesList = () => {
           </thead>
           <tbody>
             {data.map((row, index) => (
-              <tr key={index}  style={{borderBottom:"1px solid #cccccc"}}>
+              <tr key={index} style={{ borderBottom: "1px solid #cccccc" }}>
                 <td className="text-nowrap ps-2 text-start  fs_14 fw-normal Usage-text-color red_ff">
                   {row.code}
                 </td>
@@ -325,7 +321,7 @@ const UsagesList = () => {
       return (
         <table className="table table-responsive">
           <thead>
-            <tr >
+            <tr>
               <th
                 scope="col"
                 className="red-ff fs_16 fw-medium text-start Usage-text-color "
@@ -362,7 +358,7 @@ const UsagesList = () => {
           </thead>
           <tbody>
             {data1.map((row, index) => (
-              <tr key={index} style={{borderBottom:"1px solid #cccccc"}}>
+              <tr key={index} style={{ borderBottom: "1px solid #cccccc" }}>
                 <td className="text-nowrap text-start  ps-2 fs_14 fw-normal Usage-text-color red_ff">
                   {row.code}
                 </td>
@@ -441,39 +437,32 @@ const UsagesList = () => {
           </thead>
           <tbody>
             {data2.map((row, index) => (
-              <tr key={index} style={{borderBottom:"1px solid #cccccc"}}>
+              <tr key={index} style={{ borderBottom: "1px solid #cccccc" }}>
                 <td className="text-nowrap text-start ps-2  fs_14 fw-normal Usage-text-color red_ff">
                   {row.Description}
-               
                 </td>
                 <td className="text-nowrap text-start ps-2  fs_14 fw-normal Usage-text-color red_ff">
                   {row.date}
-               
                 </td>
                 <td className="text-nowrap text-start ps-2  fs_14 fw-normal Usage-text-color red_ff">
                   {row.TotalUsage}
-               
                 </td>
                 <td className="text-nowrap text-start ps-2  fs_14 fw-normal Usage-text-color red_ff">
                   {row.Recharge}
-                
                 </td>
                 <td className="text-success fs_14 red_ff ps-2  text-start text-nowrap">
                   {row.balance}
-                 
                 </td>
                 <td className="fs_14 red_ff fw-medium ps-2  text-start text-nowrap"></td>
                 <td>
                   <p className="action text-nowrap text-start ps-2   fs_14 fw-normal Usage-text-color red_ff">
                     share <Image src={Share} alt="share" />
                   </p>
-               
                 </td>
                 <td>
                   <p className="action text-nowrap text-start ps-2   fs_14 fw-normal Usage-text-color red_ff">
                     download <Image src={download} alt="download" />
                   </p>
-                
                 </td>
               </tr>
             ))}
@@ -487,8 +476,10 @@ const UsagesList = () => {
     <>
       <div className="row">
         <div className="rounded-2  py-md-3 px-md-4  p-3">
-          <Row className="justify-content-between align-items-center  " style={{borderBottom:"1.5px solid #cccccc"}}>
-          
+          <Row
+            className="justify-content-between align-items-center  "
+            style={{ borderBottom: "1.5px solid #cccccc" }}
+          >
             <div className="col-6">
               <Row className="d-none d-md-flex Usage-gap-lg-2 ">
                 <Col
@@ -501,9 +492,9 @@ const UsagesList = () => {
                     className={selectedTab === "Usage" ? "" : ""}
                   >
                     <p
-                      className={`fs_24 Usage-custom-margin  fw-semibold List-text-color   m-0  ${
+                      className={`fs_24 Usage-custom-margin   List-text-color   m-0  ${
                         selectedTab === "Usage" ? "Usage-active " : ""
-                      }  ` }
+                      }  `}
                     >
                       Usage
                     </p>
@@ -522,7 +513,7 @@ const UsagesList = () => {
                     className={selectedTab === "TaxInvoice" ? "" : ""}
                   >
                     <p
-                      className={`fs_24 Usage-custom-margin  fw-semibold List-text-color red_ff  p-0 m-0 text-nowrap ${
+                      className={`fs_24 Usage-custom-margin   List-text-color red_ff  p-0 m-0 text-nowrap ${
                         selectedTab === "TaxInvoice" ? " Usage-active" : ""
                       } `}
                     >
@@ -530,9 +521,7 @@ const UsagesList = () => {
                     </p>
                   </Nav.Link>
                   <div
-                    className={`   ${
-                      selectedTab === "TaxInvoice" ? " " : ""
-                    }`}
+                    className={`   ${selectedTab === "TaxInvoice" ? " " : ""}`}
                   ></div>
                 </Col>
                 <Col
@@ -545,7 +534,7 @@ const UsagesList = () => {
                     className={selectedTab === "Statements" ? "" : ""}
                   >
                     <p
-                      className={`fs_24 Usage-custom-margin  fw-semibold List-text-color red_ff m-0 p-0  ${
+                      className={`fs_24 Usage-custom-margin   List-text-color red_ff m-0 p-0  ${
                         selectedTab === "Statements" ? "Usage-active" : ""
                       }`}
                     >
@@ -553,9 +542,7 @@ const UsagesList = () => {
                     </p>
                   </Nav.Link>
                   <div
-                    className={`   ${
-                      selectedTab === "Statements" ? "" : ""
-                    }`}
+                    className={`   ${selectedTab === "Statements" ? "" : ""}`}
                   ></div>
                 </Col>
               </Row>
@@ -579,23 +566,21 @@ const UsagesList = () => {
               </Form.Group>
             </div>
             <div className="col-6 d-flex gap-2 border-2 px-0 justify-content-end">
-              
               {/* <Image className="mb-2" width={30} src={search} alt="Search" /> */}
 
-      {showSearchBar && (
-  <Form.Group className="position-relative">
-    <Form.Control type="search" placeholder="Search" />
-    <div className="arrow-down"></div>
-  </Form.Group>
-)}        
-<Image
-  className="mb-2 pt-1"
-  width={30}
-  src={search}
-  alt="Search"
-  onClick={handleSearchClick}
-/>
-
+              {showSearchBar && (
+                <Form.Group className="position-relative">
+                  <Form.Control type="search" placeholder="Search" />
+                  <div className="arrow-down"></div>
+                </Form.Group>
+              )}
+              <Image
+                className="mb-2 pt-1"
+                width={30}
+                src={search}
+                alt="Search"
+                onClick={handleSearchClick}
+              />
 
               <Image className="mb-2 pt-1" width={30} src={bar} alt="Bar" />
             </div>
