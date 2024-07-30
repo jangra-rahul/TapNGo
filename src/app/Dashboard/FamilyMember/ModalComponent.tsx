@@ -35,7 +35,9 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
             <div className="position-relative px-0">
               <Form.Control className=" py-2" type="text" />
               <div className="position-absolute top-0 end-0">
-                <p className="mt-2 mb-0 pe-4 text-success cursor">Verify</p>
+                <p className="mt-2 mb-0 pe-4 text-success cursor text-decoration-underline">
+                  Verify
+                </p>
               </div>
             </div>
           </Form.Group>

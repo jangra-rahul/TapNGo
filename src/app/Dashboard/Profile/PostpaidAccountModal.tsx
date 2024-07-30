@@ -24,12 +24,12 @@ const PostpaidAccountModal: React.FC<PostpaidAccountModalProps> = ({
     >
       <Modal.Header closeButton className="border-0">
         <Modal.Title>
-          <h5 className="mb-0 fs_22 red_ff mb-0 fw-semibold">
+          <h5 className="mb-0 fs_22 px-3 red_ff mb-0 fw-semibold">
             Postpaid Account Application
           </h5>
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body className="border-0 pt-2">
+      <Modal.Body className="border-0 pt-3">
         <Form onSubmit={handleSubmit}>
           <Row className="mb-3">
             <Col>

@@ -156,13 +156,7 @@ const Manual = () => {
                 value="Domestic 1"
                 className="dashboard-text-color fs_16 red_ff fw-normal"
               >
-                Domestic 1
-              </option>
-              <option value="Domestic 2" className="dashboard-text-color">
-                Domestic 2
-              </option>
-              <option value="Domestic 3" className="dashboard-text-color">
-                Domestic 3
+                International
               </option>
             </select>
           </p>

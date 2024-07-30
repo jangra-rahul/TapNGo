@@ -102,7 +102,11 @@ const NotificationPage = () => {
                         className="d-flex align-items-center p-0 m-0 ms-1"
                         style={{ width: "30px" }}
                       >
-                        <input className="checkbox" type="checkbox" />
+                        <input
+                          className="checkbox"
+                          type="checkbox"
+                          onClick={(event) => event.stopPropagation()}
+                        />
                       </Col>
                       <Col
                         xs={1}

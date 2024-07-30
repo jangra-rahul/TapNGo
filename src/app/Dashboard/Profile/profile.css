@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
 .w-40 {
   width: 40%;
 }
@@ -38,11 +40,12 @@
   cursor: pointer;
 }
 .custom-modal-width {
-  width: 800px;
+  max-width: 600px;
+  width: 100%;
 }
 
 .custom-modal-width .modal-body {
-  padding: 20px;
+  padding: 30px;
 }
 
 @media (max-width: 768px) {

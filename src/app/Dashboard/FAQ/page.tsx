@@ -35,7 +35,7 @@ const FrequentlyAskedQuestion = () => {
                   >
                     <div
                       style={{
-                        color: "blue",
+                        color: "#1364F1",
                         display: "flex",
                         alignItems: "center",
                         cursor: "pointer",
@@ -75,7 +75,7 @@ const FrequentlyAskedQuestion = () => {
                 md={5}
                 className="mb-4 d-flex flex-column  h-100 justify-content-between"
               >
-                <Accordion defaultActiveKey="0">
+                <Accordion defaultActiveKey="1">
                   <Accordion.Item
                     eventKey="1"
                     className="border border_black rounded-2 dashboard-text-color  fs_13 fw-medium red_ff"

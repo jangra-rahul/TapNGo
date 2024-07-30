@@ -73,7 +73,8 @@ const Navbar = () => {
               style={{ marginTop: "-11px" }}
             >
               <Form.Select
-                className="rounded-5 py-2 px-3 d-none d-md-flex w-20"
+                className="rounded-5 d-none d-md-flex"
+                style={{ maxWidth: "240px", padding: "12px 15px" }}
                 aria-label="Default select example"
               >
                 <option>Family Member Account</option>
@@ -131,9 +132,16 @@ const Navbar = () => {
                         isOpen ? "open" : "closed"
                       }`}
                     >
-                      <p className="mb-0"> My Profile</p>
+                      <Link href={"/Dashboard/Profile"}>
+                        <p className="mb-0 color_lightblack red_ff ">
+                          My Profile
+                        </p>
+                      </Link>
+
                       <div className="border"></div>
-                      <p className="mb-0">Log out</p>
+                      <Link href={"/Dashboard/authPages"}>
+                        <p className="mb-0 color_lightblack red_ff ">Log out</p>
+                      </Link>
                     </Accordion.Body>
                     {/* </div> */}
                   </Accordion.Item>

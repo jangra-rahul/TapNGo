@@ -12,7 +12,7 @@ import Image from "next/image";
 import "../FamilyMember/FamilyMember.css";
 import Link from "next/link";
 import Layout from "@/app/components/Layout/Laytout";
-import TransferCardModal from "./TransferModal"
+import TransferCardModal from "./TransferModal";
 
 const FamilyMember = () => {
   const [showDownloadModal, setShowDownloadModal] = useState(false);
@@ -32,7 +32,6 @@ const FamilyMember = () => {
     e.preventDefault();
     handleCloseAddMemberModal();
     handleCloseTransferModal();
-    
   };
 
   return (
@@ -205,14 +204,17 @@ const FamilyMember = () => {
                     </div>
                   </div>
                 </Card.Body>
-                <Card.Footer className="d-flex justify-content-end gap-3 mt-5 pt-5  bg-white border-0">
-                  <Button  onClick={handleShowTransferModal} className=" w-sm-40 top-up-button  fw-medium px-4 my-2 mx-1 red_ff fs_16 border-0 ">
+                <Card.Footer className="d-flex justify-content-end gap-3 mt-5 pt-5 bg-white border-0">
+                  <Button
+                    onClick={handleShowTransferModal}
+                    className="  top-up-button  fw-medium px-4 my-2 mx-1 red_ff fs_14 border-0 "
+                  >
                     Transfer card
                   </Button>
-                  <Button  className=" w-sm-40 top-up-button  fw-medium px-4 my-2 mx-1 red_ff fs_16 border-0 ">
+                  <Button className="  top-up-button  fw-medium px-4 my-2 mx-1 red_ff fs_14 border-0 ">
                     Top-Up Card
                   </Button>
-                  <Button className=" w-sm-40 top-up-button my-2 fw-medium px-4 mx-1 red_ff fs_16 border-0">
+                  <Button className="  top-up-button my-2 fw-medium px-4 mx-1 red_ff fs_14 border-0">
                     Manage card
                   </Button>
                 </Card.Footer>
@@ -287,16 +289,16 @@ const FamilyMember = () => {
           show={showDownloadModal}
           handleClose={handleCloseDownloadModal}
         />
-        
-         <ModalComponent
+
+        <ModalComponent
           show={showAddMemberModal}
           handleClose={handleCloseAddMemberModal}
           handleSubmit={handleSubmit}
         />
-         <DownloadCardModal
-            show={showDownloadModal}
-            handleClose={handleCloseDownloadModal}
-          />
+        <DownloadCardModal
+          show={showDownloadModal}
+          handleClose={handleCloseDownloadModal}
+        />
         <TransferCardModal
           show={showTransferModal}
           handleClose={handleCloseTransferModal}

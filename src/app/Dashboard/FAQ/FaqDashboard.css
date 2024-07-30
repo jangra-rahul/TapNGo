@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"); */
+
 .accordion {
   --bs-accordion-btn-icon: url(../../../../public/assets/images/svg/secondPlus.svg) !important;
   --bs-accordion-btn-active-icon: url(../../../../public/assets/images/svg/minus.svg) !important;
@@ -22,7 +24,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px !important;
+  padding: 0px 10px 10px 10px !important;
   font-size: 1rem;
   color: var(--bs-accordion-btn-color);
   text-align: left;

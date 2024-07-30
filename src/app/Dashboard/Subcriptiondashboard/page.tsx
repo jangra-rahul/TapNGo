@@ -118,7 +118,7 @@ const Subscription = () => {
                             <div className="fs_14 w-100 text-center  ">
                               <span className="w-100 d-flex justify-content-center">
                                 <p
-                                  className="text-center fw-semibold fs_16 red_ff w-25 "
+                                  className="text-center fw-semibold fs_16 red_ff "
                                   style={{
                                     borderBottom: "2px solid #1364F1",
                                     color: "#1364F1",

@@ -1,20 +1,22 @@
-.mar-bot-2{
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+.mar-bot-2 {
   margin-bottom: -8px;
 }
-.bg-color{
-  background-color: #F3F3F399 !important;
+.bg-color {
+  background-color: #f3f3f399 !important;
 }
-.dashboard-text-color{
+.dashboard-text-color {
   color: #202020;
 }
-.sub-text-color{
+.sub-text-color {
   color: #404040;
 }
-.bg-white{
+.bg-white {
   background-color: white;
 }
-.current-plan-bg{
-  background-color: #E1E9F7;
+.current-plan-bg {
+  background-color: #e1e9f7;
 }
 
 .card {
@@ -27,5 +29,3 @@
     margin-right: auto;
   }
 }
-
-  
