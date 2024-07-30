@@ -72,7 +72,7 @@ const Manual = () => {
                 Current <br /> Balance
               </p>
               <h5 className="red_ff fs_18 fw-semibold homedashboars-text-color">
-                $11
+                $00
               </h5>
             </div>
           </Col>
@@ -91,7 +91,7 @@ const Manual = () => {
                 Value
               </p>
               <h5 className="red_ff fs_18 fw-semibold homedashboars-text-color">
-                $11
+                $00
               </h5>
             </div>
           </Col>
@@ -110,7 +110,7 @@ const Manual = () => {
                 <br /> Credit
               </p>
               <h5 className="red_ff fs_18  fw-semibold homedashboars-text-color">
-                $11
+                $00
               </h5>
             </div>
           </Col>
@@ -120,7 +120,7 @@ const Manual = () => {
                 Your <br /> Balance
               </p>
               <h5 className="red_ff fs_18 fw-semibold homedashboars-text-color">
-                $11
+                $00
               </h5>
             </div>
           </Col>
