@@ -4,7 +4,25 @@ import { Button, Modal } from "react-bootstrap";
 import yellow_icon from "../../../../public/assets/images/svg/yellow_icon.svg";
 import Image from "next/image";
 
-const PlanCard = ({ planName, price, features, additionalClass, Popular }) => {
+const PlanCard: ({
+  planName,
+  price,
+  features,
+  additionalClass,
+  Popular,
+}: {
+  planName: any;
+  price: any;
+  features: any;
+  additionalClass: any;
+  Popular?: any;
+}) => React.JSX.Element = ({
+  planName,
+  price,
+  features,
+  additionalClass,
+  Popular,
+}) => {
   return (
     <div className={`col-md-6 ${additionalClass}`}>
       <div className="subscription-box w-100 p-3 rounded-2">
