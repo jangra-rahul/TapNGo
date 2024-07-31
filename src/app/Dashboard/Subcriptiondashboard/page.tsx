@@ -11,7 +11,7 @@ const Subscription = () => {
     {
       heading: "Starter Plan",
       price: "$49",
-      month: "/month",
+      month: "/Month",
       info: "Basic Reporting",
       info1: "Email Reminders",
       info2: "Budgeting Tools",
@@ -23,7 +23,7 @@ const Subscription = () => {
     {
       heading: "Basic Plan",
       price: "$99",
-      month: "/month",
+      month: "/Month",
       info: "Expense Tracking",
       info1: "Basic Reporting",
       info2: "Budgeting Tools",
@@ -34,18 +34,19 @@ const Subscription = () => {
     {
       heading: "Premium Plan",
       price: "$199",
-      month: "/month",
+      month: "/Month",
       info: "Automatic Transaction Import",
       info1: "Advanced Analytics",
       info2: "Customizable Dashboards",
       info3: "Expense Tracking",
       info4: "Financial Goal Tracking",
       plan: "Upgrade Now",
+      Popular: "Popular",
     },
     {
       heading: "Platinum Plan",
       price: "$229",
-      month: "/month",
+      month: "/Month",
       info: "Real-Time Data Sync",
       info1: "AI-Powered Insights",
       info2: "Expense Forecasting",
@@ -77,14 +78,33 @@ const Subscription = () => {
                   <Card className="bg-color p-md-3 h-100 border-0">
                     <Card.Body className="d-flex flex-column justify-content-between">
                       <div>
-                        <Card.Title className="fs_20 fw-medium red_ff dashboard-text-color    ">
-                          {row.heading}
-                        </Card.Title>
+                        <div className="d-flex justify-content-between align-items-center">
+                          <Card.Title className="fs_20 fw-medium red_ff dashboard-text-color    ">
+                            {row.heading}
+                          </Card.Title>
+                          {row.Popular ? (
+                            <>
+                              <Card.Title className="fs_20 fw-medium red_ff dashboard-text-color    ">
+                                <span
+                                  className="fs_13 red_ff px-2 py-1 fw-semibold rounded-2"
+                                  style={{
+                                    backgroundColor: "#E3F4E7",
+                                    color: "#0E8029",
+                                  }}
+                                >
+                                  {row.Popular}
+                                </span>
+                              </Card.Title>
+                            </>
+                          ) : (
+                            <></>
+                          )}
+                        </div>
                         <div className="d-flex align-items-end mar-bot-2 mb-2">
                           <p className="fs_40 mb-0 fw-semibold red_ff dashboard-text-color">
                             {row.price}
                           </p>
-                          <p className="mb-2 fs_16 red_ff fw-normal dashboard-text-color">
+                          <p className="mb-2 ps-1 fs_16 red_ff fw-normal dashboard-text-color">
                             {row.month}
                           </p>
                         </div>
@@ -124,7 +144,7 @@ const Subscription = () => {
                                     color: "#1364F1",
                                   }}
                                 >
-                                  Cancle
+                                  Cancel
                                 </p>
                               </span>
 

@@ -26,8 +26,8 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
         <Modal.Title className="fs_24 red_ff d-flex justify-content-center dashboard-text-color pb-2 mb-3 mt-3 fw-semibold">
           Add Family Member
         </Modal.Title>
-        <Form onSubmit={handleSubmit} className="mx-3">
-          <Form.Group as={Row} className="mb-3" controlId="formCardNumber">
+        <Form onSubmit={handleSubmit} className="">
+          <Form.Group as={Row} className="mb-3 px-3" controlId="formCardNumber">
             <Form.Label className="fs-18 red_ff p-0 m-0 pb-2 text-dark">
               Card Number
             </Form.Label>
@@ -42,14 +42,14 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
             </div>
           </Form.Group>
 
-          <Form.Group as={Row} className="mb-3" controlId="formNameOnCard">
+          <Form.Group as={Row} className="mb-3 px-3" controlId="formNameOnCard">
             <Form.Label className="fs-18 red_ff p-0 m-0 pb-2 text-dark">
               Name on Card
             </Form.Label>
             <Form.Control className="py-2" type="text" placeholder="" />
           </Form.Group>
 
-          <Form.Group as={Row} className="mb-3" controlId="formRelation">
+          <Form.Group as={Row} className="mb-3 px-3" controlId="formRelation">
             <Form.Label className="fs-18 red_ff p-0 m-0 pb-2 text dashboard-text-color">
               Relation to You
             </Form.Label>
@@ -68,13 +68,13 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
 
           <Form.Group
             as={Row}
-            className="mb-3 d-flex dashboard-text-color"
+            className="mb-3 px-3 d-flex dashboard-text-color"
             controlId="formTwoWaySync"
           >
-            <Form.Label column sm={4}>
+            <Form.Label column sm={4} className="px-0">
               Two way sync <img src={exclamation} alt="" />
             </Form.Label>
-            <div className="d-flex gap-3">
+            <div className="d-flex gap-3 px-0">
               <Form.Check
                 type="radio"
                 label="Yes"
@@ -93,7 +93,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
           <Button
             variant="primary"
             type="submit"
-            className="w-100 red_ff fs-16 py-3 fw-semibold"
+            className="w-100 px-0 red_ff fs-16 py-3 fw-semibold"
           >
             Submit
           </Button>

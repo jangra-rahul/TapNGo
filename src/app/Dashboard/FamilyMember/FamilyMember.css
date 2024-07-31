@@ -124,3 +124,7 @@
 .small-modal .modal-dialog {
   max-width: 350px;
 }
+
+.modal-backdrop {
+  --bs-backdrop-opacity: 30% !important;
+}

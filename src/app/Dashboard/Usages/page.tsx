@@ -147,6 +147,7 @@ const Usages: React.FC = () => {
                       value={year}
                       onChange={(e) => setYear(Number(e.target.value))}
                     >
+                      <option value="Year">Year</option>
                       {[2024, 2023, 2022].map((y) => (
                         <option key={y} value={y}>
                           {y}

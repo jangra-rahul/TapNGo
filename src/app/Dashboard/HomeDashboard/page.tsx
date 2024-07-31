@@ -272,106 +272,108 @@ const Home: React.FC = () => {
               </Row>
             </Col>
             <Col xl={5} className="mt-4 mt-xl-0">
-              <div className="card  h-100 border-0 p-md-4 p-3">
-                <div className="d-md-flex flex-wrap justify-content-between align-items-center">
-                  <span className="">
-                    <p className="fs_20 fw-semibold red_ff  dashboard-text-color">
-                      {" "}
-                      Prepaid Recharge{" "}
-                    </p>
-                  </span>
-                  <div className="d-flex mt-3 mt-sm-0 text-color align-items-center gap-3">
-                    <p>Auto Top-up</p>
-                    <div className="border rounded-5 mb-3 m-0 ">
-                      <Form className="border-1  rounded-1  ps-1 pe-2 d-flex justify-content-center">
-                        <Form.Check
-                          type="switch"
-                          id="custom-switch"
-                          label={
-                            <span className={toggleState ? "color_blue" : ""}>
-                              {toggleState ? "On" : "Off"}
-                            </span>
-                          }
-                          onChange={(event) => {
-                            setToggleState(event.target.checked);
-                          }}
-                        />
-                      </Form>
+              <div className="card h-100 d-flex flex-column flex-grow-1 border-0 p-md-4 p-3">
+                <div>
+                  <div className="d-md-flex flex-wrap justify-content-between align-items-center">
+                    <span className="">
+                      <p className="fs_20 fw-semibold red_ff  dashboard-text-color">
+                        {" "}
+                        Prepaid Recharge{" "}
+                      </p>
+                    </span>
+                    <div className="d-flex mt-3 mt-sm-0 text-color align-items-center gap-3">
+                      <p>Auto Top-up</p>
+                      <div className="border rounded-5 mb-3 m-0 ">
+                        <Form className="border-1  rounded-1  ps-1 pe-2 d-flex justify-content-center">
+                          <Form.Check
+                            type="switch"
+                            id="custom-switch"
+                            label={
+                              <span className={toggleState ? "color_blue" : ""}>
+                                {toggleState ? "On" : "Off"}
+                              </span>
+                            }
+                            onChange={(event) => {
+                              setToggleState(event.target.checked);
+                            }}
+                          />
+                        </Form>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <Row className="mt-4">
-                  <Col
-                    xs={4}
-                    className="pe-0 text-center"
-                    onClick={() => handleTabClick("Manual")}
-                  >
-                    <Nav.Link
-                      href="#"
-                      className={
-                        selectedTab === "Manual"
-                          ? " border_radius_blue color_blue"
-                          : ""
-                      }
+                  <Row className="mt-4">
+                    <Col
+                      xs={4}
+                      className="pe-0 text-center"
+                      onClick={() => handleTabClick("Manual")}
                     >
-                      <h3 className="red_ff fs_16">Manual</h3>
-                    </Nav.Link>
-                    {selectedTab === "Manual" ? (
-                      <div className="mb-2   border"></div>
-                    ) : (
-                      <>
-                        <div className="    border"></div>
-                      </>
-                    )}
-                  </Col>
-                  <Col
-                    xs={4}
-                    className="px-0 text-center"
-                    onClick={() => handleTabClick("Auto")}
-                  >
-                    <Nav.Link
-                      href="#"
-                      className={
-                        selectedTab === "Auto"
-                          ? " border_radius_blue color_blue"
-                          : ""
-                      }
+                      <Nav.Link
+                        href="#"
+                        className={
+                          selectedTab === "Manual"
+                            ? " border_radius_blue color_blue"
+                            : ""
+                        }
+                      >
+                        <h3 className="red_ff fs_16">Manual</h3>
+                      </Nav.Link>
+                      {selectedTab === "Manual" ? (
+                        <div className="mb-2   border"></div>
+                      ) : (
+                        <>
+                          <div className="    border"></div>
+                        </>
+                      )}
+                    </Col>
+                    <Col
+                      xs={4}
+                      className="px-0 text-center"
+                      onClick={() => handleTabClick("Auto")}
                     >
-                      <h3 className="red_ff fs_16">Auto</h3>
-                    </Nav.Link>
-                    {selectedTab === "Auto" ? (
-                      <div className="mb-3  border"></div>
-                    ) : (
-                      <>
-                        <div className="mt-2  border"></div>
-                      </>
-                    )}
-                  </Col>
-                  <Col
-                    xs={4}
-                    className="ps-0 text-center"
-                    onClick={() => handleTabClick("Subscription")}
-                  >
-                    <Nav.Link
-                      href="#"
-                      className={
-                        selectedTab === "Subscription"
-                          ? "active-tab border_radius_blue color_blue"
-                          : ""
-                      }
+                      <Nav.Link
+                        href="#"
+                        className={
+                          selectedTab === "Auto"
+                            ? " border_radius_blue color_blue"
+                            : ""
+                        }
+                      >
+                        <h3 className="red_ff fs_16">Auto</h3>
+                      </Nav.Link>
+                      {selectedTab === "Auto" ? (
+                        <div className="mb-3  border"></div>
+                      ) : (
+                        <>
+                          <div className="mt-2  border"></div>
+                        </>
+                      )}
+                    </Col>
+                    <Col
+                      xs={4}
+                      className="ps-0 text-center"
+                      onClick={() => handleTabClick("Subscription")}
                     >
-                      <h3 className="red_ff fs_16">Subscription</h3>
-                    </Nav.Link>
-                    {selectedTab === "Subscription" ? (
-                      <div className="mb-3   border"></div>
-                    ) : (
-                      <>
-                        <div className="mt-2   border"></div>
-                      </>
-                    )}
-                  </Col>
-                </Row>
+                      <Nav.Link
+                        href="#"
+                        className={
+                          selectedTab === "Subscription"
+                            ? "active-tab border_radius_blue color_blue"
+                            : ""
+                        }
+                      >
+                        <h3 className="red_ff fs_16">Subscription</h3>
+                      </Nav.Link>
+                      {selectedTab === "Subscription" ? (
+                        <div className="mb-3   border"></div>
+                      ) : (
+                        <>
+                          <div className="mt-2   border"></div>
+                        </>
+                      )}
+                    </Col>
+                  </Row>
+                </div>
                 <Tab.Content className="mt-2">
                   <Tab.Pane
                     eventKey="Manual"

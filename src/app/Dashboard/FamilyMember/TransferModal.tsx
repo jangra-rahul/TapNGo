@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Modal, Button, Form, Row } from "react-bootstrap";
-import icon from "../../../../public/assets/images/svg/Success_icon.svg";
+import you_icon from "../../../assets/images/svg/you_icon.svg";
+import son_icon from "../../../assets/images/svg/son_icon.svg";
 import right_icon from "../../../../public/assets/images/svg/right_icon.png";
 
 interface ModalComponentProps {
@@ -50,8 +51,8 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               </Form.Label>
               <Form.Select className="py-2 red_ff">
                 <option className="fw-normal fs_14 red_ff">
-                  Andrew (1521 0351 6541 3565){" "}
-                  <span style={{ color: "yellow" }}>You</span>
+                  Andrew (1521 0351 6541 3565)
+                  <Image width={280} className="" src={you_icon} alt="Card" />
                 </option>
                 <option value="spouse">
                   Cathy (1521 0351 6541 3565) Spouse
@@ -76,7 +77,7 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               <Form.Select className="py-2 red_ff" aria-label="Select Relation">
                 <option className="fw-normal fs_14 red_ff">
                   Sara (1253 2351 6546 4870){" "}
-                  <span style={{ color: "#FFCA00" }}>Son</span>
+                  <Image width={280} className=" " src={son_icon} alt="Card" />
                 </option>
                 <option value="spouse">Spouse</option>
                 <option value="child">Child</option>
@@ -90,7 +91,11 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               <Form.Label className="fs-16 fw-normal red_ff p-0 m-0 pb-2 text dashboard-text-color">
                 Enter Amount
               </Form.Label>
-              <Form.Control className="py-2" type="Number" placeholder="$100" />
+              <Form.Control
+                className="py-2 fw-bold"
+                type="Number"
+                placeholder="$100"
+              />
             </Form.Group>
             <Form.Group as={Row} className="mb-3 px-3" controlId="formRelation">
               <Form.Label className="fs-16 fw-normal red_ff p-0 m-0 pb-2 text dashboard-text-color">
@@ -99,13 +104,13 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               <Form.Control
                 className="py-2"
                 type="text"
-                placeholder="Enter Message"
+                placeholder="Enter Message...."
               />
             </Form.Group>
 
             <button
               type="submit"
-              className="w-100 bg-primary border-0  text-white rounded-2 red_ff fs-16 py-3 px-0 fw-semibold"
+              className="w-100 bg-primary mb-4 mt-3 border-0  text-white rounded-2 red_ff fs-16 py-3 px-0 fw-semibold"
             >
               Submit
             </button>

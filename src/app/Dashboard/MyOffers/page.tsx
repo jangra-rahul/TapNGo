@@ -98,9 +98,12 @@ const Myoffer = () => {
                     src={group123}
                     alt="Coupon Details"
                   />
-                  <h4 className="fs_16 red_ff fw-medium mt-3 text-dark">
-                    Details
-                  </h4>
+                  <div className="d-flex justify-content-between mt-4 align-items-center">
+                    <h4 className="fs_16 red_ff fw-semibold  text-dark">
+                      Details
+                    </h4>
+                    <p className="mb-0 fs_14">Expire on: 28 Feb 2024</p>
+                  </div>
                   <p className="fs_14 red_ff fw-normal mt-2 text-dark">
                     1. Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry.
@@ -114,7 +117,7 @@ const Myoffer = () => {
                     typesetting industry.
                   </p>
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer className="border-0">
                   <Button
                     variant="primary"
                     className="w-100 fs_16 fw-medium red_ff py-3"

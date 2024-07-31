@@ -78,9 +78,9 @@ const FrequentlyAskedQuestion = () => {
                 <Accordion defaultActiveKey="1">
                   <Accordion.Item
                     eventKey="1"
-                    className="border border_black rounded-2 dashboard-text-color  fs_13 fw-medium red_ff"
+                    className="border border_black rounded-2 dashboard-text-color  fs_13  red_ff"
                   >
-                    <Accordion.Header className="border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
+                    <Accordion.Header className="border-bottom-radius dashboard-text-color fs_14 fw-semibold red_ff">
                       <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                         How can I add funds to my account?
                       </div>
@@ -89,7 +89,7 @@ const FrequentlyAskedQuestion = () => {
                     </Accordion.Header>
 
                     <Accordion.Body>
-                      <p className=" fs_13">
+                      <p className=" fs_13 ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -344,7 +344,7 @@ const FrequentlyAskedQuestion = () => {
               </Col>
 
               <div className="d-flex justify-content-center align-content-center mt-5 ">
-                <p className=" fs_16 fw-medium red_ff light-text-color">
+                <p className=" fs_16 fw-normal red_ff light-text-color">
                   Didn,t get you question answered?{" "}
                   <Link href="#" style={{ borderBottom: "1px solid blue" }}>
                     <span className=" fw-bold">Contact Us</span>

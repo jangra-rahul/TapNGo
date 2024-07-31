@@ -304,12 +304,12 @@ const UsagesList = () => {
                 </td>
                 <td>
                   <p className="action text-nowrap text-start  ps-2  fs_14 fw-normal Usage-text-color red_ff">
-                    share <Image src={Share} alt="share" />
+                    Share <Image src={Share} alt="share" />
                   </p>
                 </td>
                 <td>
                   <p className="action text-nowrap text-start  ps-2  fs_14 fw-normal Usage-text-color red_ff">
-                    download <Image src={download} alt="download" />
+                    Download <Image src={download} alt="download" />
                   </p>
                 </td>
               </tr>
@@ -379,12 +379,12 @@ const UsagesList = () => {
                 </td>
                 <td>
                   <p className="action text-nowrap text-start  ps-2 fs_14 fw-normal Usage-text-color red_ff">
-                    share <Image src={Share} alt="share" />
+                    Share <Image src={Share} alt="share" />
                   </p>
                 </td>
                 <td>
                   <p className="action text-nowrap text-start  ps-2 fs_14 fw-normal Usage-text-color red_ff">
-                    download <Image src={download} alt="download" />
+                    Download <Image src={download} alt="download" />
                   </p>
                 </td>
               </tr>
@@ -456,12 +456,12 @@ const UsagesList = () => {
                 <td className="fs_14 red_ff fw-medium ps-2  text-start text-nowrap"></td>
                 <td>
                   <p className="action text-nowrap text-start ps-2   fs_14 fw-normal Usage-text-color red_ff">
-                    share <Image src={Share} alt="share" />
+                    Share <Image src={Share} alt="share" />
                   </p>
                 </td>
                 <td>
                   <p className="action text-nowrap text-start ps-2   fs_14 fw-normal Usage-text-color red_ff">
-                    download <Image src={download} alt="download" />
+                    Download <Image src={download} alt="download" />
                   </p>
                 </td>
               </tr>
