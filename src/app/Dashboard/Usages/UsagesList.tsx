@@ -346,7 +346,7 @@ const UsagesList = () => {
               >
                 To
               </th>
-              <th scope="col" className="text-success text-start">
+              <th scope="col" className=" text-start">
                 Status
               </th>
               <th scope="col" className="text-start">
@@ -371,7 +371,7 @@ const UsagesList = () => {
                 <td className="text-nowrap text-start  ps-2 fs_14 fw-normal Usage-text-color red_ff">
                   {row.company}
                 </td>
-                <td className="text-success fs_14 red_ff ps-2  text-start text-nowrap">
+                <td className="text-success fs_14 red_ff ps-2 fw0semibold text-start text-nowrap">
                   {row.status}
                 </td>
                 <td className="fs_14 red_ff fw-medium  ps-2 text-start text-nowrap">
@@ -450,7 +450,7 @@ const UsagesList = () => {
                 <td className="text-nowrap text-start ps-2  fs_14 fw-normal Usage-text-color red_ff">
                   {row.Recharge}
                 </td>
-                <td className="text-success fs_14 red_ff ps-2  text-start text-nowrap">
+                <td className=" fs_14 red_ff ps-2  text-start text-nowrap">
                   {row.balance}
                 </td>
                 <td className="fs_14 red_ff fw-medium ps-2  text-start text-nowrap"></td>

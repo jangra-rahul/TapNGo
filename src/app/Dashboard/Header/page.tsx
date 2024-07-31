@@ -103,6 +103,7 @@ const Navbar = () => {
                   <FaAngleDown style={{ color: "black" }} />
                 </div>
               </div> */}
+
               <div className="accordion-container">
                 <Accordion className="w-100">
                   <Accordion.Item
@@ -121,7 +122,7 @@ const Navbar = () => {
                           width={38}
                           height={33}
                         />
-                        <div>
+                        <div className="d-md-block d-none">
                           <h6 className="mb-0 fs_14">Sagar M.</h6>
                           <p className="mb-0 fs_13 mt-1">#23543</p>
                         </div>

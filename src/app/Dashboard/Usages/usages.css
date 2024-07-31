@@ -98,6 +98,9 @@
 .custom-padding {
   padding: 20px;
 }
+.margin_bottom {
+  margin-bottom: -22px !important;
+}
 
 @media (max-width: 768px) {
   .custom-margin {

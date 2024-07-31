@@ -141,7 +141,7 @@ const Usages: React.FC = () => {
                 </div>
                 <div className=" border border-1 flex-auto">
                   {/* Chart */}
-                  <span className="relative d-flex justify-content-end mt-4 pe-2 mb-4 ">
+                  <span className=" d-flex justify-content-end mt-3 pe-2 margin_bottom">
                     <select
                       className="form-select w-auto"
                       value={year}
@@ -169,7 +169,7 @@ const Usages: React.FC = () => {
                 <Col lg={6} xs={6} className="p-2  ">
                   <div className="border border-color ps-3 pt-3 pb-2 text-dark me-2 Usage-Category-box">
                     <p>Car-Wash</p>
-                    <Image src={Group} alt="Car-Wash" />
+                    <Image className="w-100" src={Group} alt="Car-Wash" />
                     <p className="fs_20 fw-semibold red_ff pt-3 text-dark">
                       $116
                     </p>
@@ -178,7 +178,7 @@ const Usages: React.FC = () => {
                 <Col lg={6} xs={6} className="p-2">
                   <div className="border text-dark border-color ps-3 pb-2 pt-3 text-nowrap me-2 Usage-Category-box">
                     <p>Laundry Shop</p>
-                    <Image src={Group} alt="Laundry Shop" />
+                    <Image className="w-100" src={Group} alt="Laundry Shop" />
                     <p className="fs_20 fw-semibold red_ff pt-3 text-dark">
                       $116
                     </p>
@@ -187,7 +187,7 @@ const Usages: React.FC = () => {
                 <Col lg={6} xs={6} className="p-2">
                   <div className="border border-color ps-3 pt-3 pb-2 text-dark text-nowrap me-2 Usage-Category-box">
                     <p>Valet Service</p>
-                    <Image src={Group} alt="Valet Service" />
+                    <Image className="w-100" src={Group} alt="Valet Service" />
                     <p className="fs_20 fw-semibold red_ff pt-3 text-dark">
                       $116
                     </p>
@@ -196,7 +196,7 @@ const Usages: React.FC = () => {
                 <Col lg={6} xs={6} className="p-2">
                   <div className="border border-color ps-2 pt-3 pb-2 text-dark me-2 Usage-Category-box">
                     <p>Ping-Pong</p>
-                    <Image src={Group} alt="Ping-Pong" />
+                    <Image className="w-100" src={Group} alt="Ping-Pong" />
                     <p className="fs_20 fw-semibold red_ff pt-3 text-dark">
                       $116
                     </p>
