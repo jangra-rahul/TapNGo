@@ -461,7 +461,7 @@ const UsagesList = () => {
                 </td>
                 <td>
                   <p className="action text-nowrap text-start ps-2   fs_14 fw-normal Usage-text-color red_ff">
-                    Download <Image src={download} alt="download" />
+                    Download <Image src={download} alt="download image" />
                   </p>
                 </td>
               </tr>
