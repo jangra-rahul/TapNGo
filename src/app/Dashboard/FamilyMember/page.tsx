@@ -209,7 +209,7 @@ const FamilyMember = () => {
                     onClick={handleShowTransferModal}
                     className="  top-up-button  fw-medium px-4 my-2 mx-1 red_ff fs_14 border-0 "
                   >
-                    Transfer card
+                    Transfer Balance
                   </Button>
                   <Button className="  top-up-button  fw-medium px-4 my-2 mx-1 red_ff fs_14 border-0 ">
                     Top-Up Card

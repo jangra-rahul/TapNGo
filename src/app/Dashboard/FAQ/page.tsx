@@ -205,152 +205,157 @@ const FrequentlyAskedQuestion = () => {
                     </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
+                <div className=" mt-5 d-md-block d-none ">
+                  <p className=" fs_16  fw-normal red_ff light-text-color">
+                    Didn,t get you question answered?{" "}
+                    <Link href="#" style={{ borderBottom: "1px solid blue" }}>
+                      <span className=" fw-bold">Contact Us</span>
+                    </Link>
+                  </p>
+                </div>
               </Col>
 
-              <Col
-                xs={12}
-                md={5}
-                className="mb-4 d-flex flex-column  h-100 justify-content-between"
-              >
-                <Accordion defaultActiveKey="0">
-                  <Accordion.Item
-                    eventKey="1"
-                    className="border border_black  "
-                  >
-                    <Accordion.Header className=" border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
-                      <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
-                        How can I add funds to my account?
-                      </div>
+              <Col xs={12} md={5} className="mb-4 d-flex flex-column">
+                <div>
+                  <Accordion defaultActiveKey="0">
+                    <Accordion.Item
+                      eventKey="1"
+                      className="border border_black  "
+                    >
+                      <Accordion.Header className=" border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
+                        <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
+                          How can I add funds to my account?
+                        </div>
 
-                      <hr />
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <p className=" fs_13">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                      </p>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey="2"
-                    className="border border_black mt-3 "
-                  >
-                    <Accordion.Header className=" border-bottom-radius">
-                      <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
-                        What payment methods are supported for topping up my
-                        account?
-                      </div>
+                        <hr />
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p className=" fs_13">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item
+                      eventKey="2"
+                      className="border border_black mt-3 "
+                    >
+                      <Accordion.Header className=" border-bottom-radius">
+                        <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
+                          What payment methods are supported for topping up my
+                          account?
+                        </div>
 
-                      <hr />
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <p className=" fs_13">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                      </p>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey="3"
-                    className="border border_black mt-3 "
-                  >
-                    <Accordion.Header className=" border-bottom-radius">
-                      <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
-                        Is there a minimum or maximum limit for money top-ups?
-                      </div>
+                        <hr />
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p className=" fs_13">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item
+                      eventKey="3"
+                      className="border border_black mt-3 "
+                    >
+                      <Accordion.Header className=" border-bottom-radius">
+                        <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
+                          Is there a minimum or maximum limit for money top-ups?
+                        </div>
 
-                      <hr />
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <p className=" fs_13">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                      </p>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey="4"
-                    className="border border_black mt-3 "
-                  >
-                    <Accordion.Header className=" border-bottom-radius">
-                      <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
-                        How long does it take for my account to reflect the
-                        newly added funds?
-                      </div>
-                      <hr />
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <p className=" fs_13">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                      </p>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                  <Accordion.Item
-                    eventKey="5"
-                    className="border border_black mt-3 "
-                  >
-                    <Accordion.Header className=" border-bottom-radius">
-                      <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
-                        Are there any fees associated with topping up my
-                        account?
-                      </div>
+                        <hr />
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p className=" fs_13">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item
+                      eventKey="4"
+                      className="border border_black mt-3 "
+                    >
+                      <Accordion.Header className=" border-bottom-radius">
+                        <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
+                          How long does it take for my account to reflect the
+                          newly added funds?
+                        </div>
+                        <hr />
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p className=" fs_13">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item
+                      eventKey="5"
+                      className="border border_black mt-3 "
+                    >
+                      <Accordion.Header className=" border-bottom-radius">
+                        <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
+                          Are there any fees associated with topping up my
+                          account?
+                        </div>
 
-                      <hr />
-                    </Accordion.Header>
-                    <Accordion.Body>
-                      <p className=" fs_13">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                      </p>
-                    </Accordion.Body>
-                  </Accordion.Item>
-                </Accordion>
+                        <hr />
+                      </Accordion.Header>
+                      <Accordion.Body>
+                        <p className=" fs_13">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum.
+                        </p>
+                      </Accordion.Body>
+                    </Accordion.Item>
+                  </Accordion>
+                  <div className=" mt-5 d-md-none d-dlock ">
+                    <p className=" fs_16  fw-normal red_ff light-text-color">
+                      Didn,t get you question answered?{" "}
+                      <Link href="#" style={{ borderBottom: "1px solid blue" }}>
+                        <span className=" fw-bold">Contact Us</span>
+                      </Link>
+                    </p>
+                  </div>
+                </div>
               </Col>
-
-              <div className="d-flex justify-content-center align-content-center mt-5 ">
-                <p className=" fs_16 fw-normal red_ff light-text-color">
-                  Didn,t get you question answered?{" "}
-                  <Link href="#" style={{ borderBottom: "1px solid blue" }}>
-                    <span className=" fw-bold">Contact Us</span>
-                  </Link>
-                </p>
-              </div>
             </Row>
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { Modal, Button, Form, Row } from "react-bootstrap";
-// import you_icon from "../../../assets/images/svg/you_icon.svg";
-// import son_icon from "../../../assets/images/svg/son_icon.svg";
+import you_icon from "../../../assets/images/svg/you_icon.svg";
+import son_icon from "../../../assets/images/svg/son_icon.svg";
 import right_icon from "../../../../public/assets/images/svg/right_icon.png";
 
 interface ModalComponentProps {
@@ -49,10 +49,14 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               <Form.Label className="fs-16 red_ff w-normal p-0 m-0 pb-2 text-dark">
                 Transferring From
               </Form.Label>
-              <Form.Select className="py-2 red_ff">
-                <option className="fw-normal fs_14 red_ff">
+              <Form.Select className="py-2 red_ff position-relative">
+                <Image
+                  className=" position-absolute top-0 start-50 z_index1"
+                  src={you_icon}
+                  alt="Card"
+                />
+                <option value={"Andrew"} className="">
                   Andrew (1521 0351 6541 3565)
-                  {/* <Image width={280} className="" src={you_icon} alt="Card" /> */}
                 </option>
                 <option value="spouse">
                   Cathy (1521 0351 6541 3565) Spouse
@@ -77,7 +81,7 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               <Form.Select className="py-2 red_ff" aria-label="Select Relation">
                 <option className="fw-normal fs_14 red_ff">
                   Sara (1253 2351 6546 4870){" "}
-                  {/* <Image width={280} className=" " src={son_icon} alt="Card" /> */}
+                  <Image width={280} className=" " src={son_icon} alt="Card" />
                 </option>
                 <option value="spouse">Spouse</option>
                 <option value="child">Child</option>
@@ -148,7 +152,7 @@ const TransferModal: React.FC<ModalComponentProps> = ({
             Transaction is successful
           </h4>
           <p className=" ">
-            You have successfully added your car<br></br> Registration details.
+            You have successfully transferred<br></br> amount to Sara.
           </p>
         </Modal.Body>
         {/* <Modal.Footer className="border-0">
