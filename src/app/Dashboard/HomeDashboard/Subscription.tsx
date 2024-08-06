@@ -113,7 +113,7 @@ const Subscription = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container subscription">
       <div className="row">
         {plans.map((plan, index) => (
           <PlanCard

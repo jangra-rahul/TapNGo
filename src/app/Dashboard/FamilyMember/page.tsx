@@ -6,6 +6,7 @@ import greenball from "../../../../public/assets/images/svg/greenball.svg";
 import plus from "../../../../public/assets/images/svg/plus.svg";
 import HDFC_Card from "../../../../public/assets/images/svg/HDFC_Card.svg";
 import Arrow from "../../../../public/assets/images/svg/arrow.svg";
+import approal_card from "../../../assets/images/svg/approval_img.png";
 import ModalComponent from "./ModalComponent";
 import DownloadCardModal from "./DownloadCardModal";
 import Image from "next/image";
@@ -37,7 +38,10 @@ const FamilyMember = () => {
   return (
     <Layout>
       <div className="px-2">
-        <div className="py-1 mt-3 px-4 rounded-2 bg-white">
+        <div
+          className="py-1 mt-3 px-4 rounded-2 bg-white"
+          style={{ minHeight: "87vh" }}
+        >
           <h1 className="pb-2 fw-semibold fs_28  red_ff dashboard-text-color pt-4">
             Family Members
           </h1>
@@ -75,6 +79,7 @@ const FamilyMember = () => {
                       <Image src={card} alt="Card" className="img-fluid" />
                     </div>
                   </div>
+                  <Image src={approal_card} alt="Card" className="img-fluid" />
                 </Card.Body>
 
                 <div className="d-flex px-3 justify-content-center mt-3 border-0 bg-white">

@@ -52,6 +52,62 @@ const NotificationPage = () => {
         "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
       time: "30 min",
     },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
+    {
+      initial: "R",
+      title: "Reminder to Categorize Expenses",
+      description:
+        "You have several uncategorized transactions in your account ens.... ure accurate spending analysis, please take a moment...",
+      time: "30 min",
+    },
   ];
 
   const handleRowClick = (index) => {
@@ -62,7 +118,10 @@ const NotificationPage = () => {
     <>
       <Layout>
         <div className="px-2 mt-4">
-          <div className="bg-white px-4 py-2 mt-2 rounded-2 ">
+          <div
+            className="bg-white px-4 py-2 mt-2 rounded-2 "
+            style={{ minHeight: "87vh" }}
+          >
             <Row className="bg-white align-items-center ">
               <Col
                 xs={3}
@@ -87,7 +146,7 @@ const NotificationPage = () => {
               </Col>
             </Row>
             <hr />
-            <div style={{ height: "460px", overflow: "auto" }}>
+            <div className="custom_h" style={{ overflow: "auto" }}>
               <Row className=" d-flex bg-white py-3 mx-2  text-dark  ">
                 {notifications.map((notification, index) => (
                   <div key={index}>

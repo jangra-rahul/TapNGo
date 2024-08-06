@@ -187,3 +187,13 @@
     overflow: hidden;
   }
 }
+@media (min-width: 1500px) {
+  .custom_h {
+    height: 1000px !important;
+  }
+}
+@media (max-width: 1540px) {
+  .custom_h {
+    height: 500px !important;
+  }
+}

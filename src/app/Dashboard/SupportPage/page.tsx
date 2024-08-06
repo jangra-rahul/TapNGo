@@ -137,7 +137,10 @@ const Support = () => {
       <Layout>
         <div className="px-3">
           <div className="border-rounded">
-            <Row className=" py-3 mt-4 p-sm-0 rounded-3 bg-white ">
+            <Row
+              className=" py-3 mt-4 p-sm-0 rounded-3 bg-white "
+              style={{ minHeight: "87vh" }}
+            >
               <Col className="px-4 pt-2 ">
                 <div className="d-flex align-items-center justify-content-between mt-3 pb-2 ">
                   <p className="fs_28 fw-semibold red_ff text-nowrap dashboard-text-color m-0 p-0 fs-sm-20">

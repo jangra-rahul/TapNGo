@@ -69,7 +69,7 @@ const Navbar = () => {
               </h4>
             </div>
             <div
-              className="d-flex gap-4 align-items-center w-100 res-bg pe-2  justify-content-end"
+              className="d-flex gap-3 align-items-center w-100 res-bg pe-2  justify-content-end"
               style={{ marginTop: "-11px" }}
             >
               <Form.Select
@@ -87,8 +87,8 @@ const Navbar = () => {
                   <Image
                     src={noti_icon}
                     alt="noti_icon"
-                    width={40}
-                    height={40}
+                    width={48}
+                    height={48}
                   />
                 </Link>
               </div>

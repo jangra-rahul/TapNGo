@@ -33,7 +33,7 @@ const Profile = () => {
   return (
     <>
       <Layout>
-        <div className="px-2">
+        <div className="px-3">
           <div className="rounded-3 ">
             <Row className="justify-content-center  text-nowrap bg-white mt-4 rounded-3 ">
               <div className="d-flex flex-wrap gap-md-5 gap-sm-4 gap-3 mt-4 p-0 m-0 ps-md-5 ps-4 text-nowrap">

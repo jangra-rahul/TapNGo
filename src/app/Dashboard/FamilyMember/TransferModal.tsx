@@ -29,6 +29,7 @@ const TransferModal: React.FC<ModalComponentProps> = ({
     handleClose();
   };
 
+  const [selectedOption, setSelectedOption] = useState("");
   return (
     <>
       <Modal show={show} centered onHide={handleClose}>
@@ -49,14 +50,21 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               <Form.Label className="fs-16 red_ff w-normal p-0 m-0 pb-2 text-dark">
                 Transferring From
               </Form.Label>
-              <Form.Select className="py-2 red_ff position-relative">
+              <Form.Select
+                className={`py-2 red_ff position-relative ${
+                  selectedOption === "Andrew" ? "selected-option" : ""
+                }`}
+                value={selectedOption}
+                onChange={(e) => setSelectedOption(e.target.value)}
+              >
                 <Image
                   className=" position-absolute top-0 start-50 z_index1"
                   src={you_icon}
                   alt="Card"
                 />
-                <option value={"Andrew"} className="">
-                  Andrew (1521 0351 6541 3565)
+                <option value={"Andrew"}>
+                  Andrew (1521 0351 6541 3565){" "}
+                  <span className="color_blue">You</span>
                 </option>
                 <option value="spouse">
                   Cathy (1521 0351 6541 3565) Spouse
@@ -80,7 +88,7 @@ const TransferModal: React.FC<ModalComponentProps> = ({
               </Form.Label>
               <Form.Select className="py-2 red_ff" aria-label="Select Relation">
                 <option className="fw-normal fs_14 red_ff">
-                  Sara (1253 2351 6546 4870){" "}
+                  Sara (1253 2351 6546 4870) <span>Son</span>
                   <Image width={280} className=" " src={son_icon} alt="Card" />
                 </option>
                 <option value="spouse">Spouse</option>

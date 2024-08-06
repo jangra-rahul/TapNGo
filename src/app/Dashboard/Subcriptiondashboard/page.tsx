@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 import Layout from "@/app/components/Layout/Laytout";
 import Tick from "../../../../public/assets/images/svg/tick.svg";
 import "./subcription.css";
@@ -59,8 +60,11 @@ const Subscription = () => {
   return (
     <>
       <Layout>
-        <div className="px-3">
-          <div className="rounded-2 p-md-4 p-3 mt-4 bg-white">
+        <div className="px-2">
+          <div
+            className="rounded-2 p-md-4 p-3 mt-4 bg-white"
+            style={{ minHeight: "87vh" }}
+          >
             <Row className="align-items-center">
               <Col xs={12} className="ms-md-2">
                 <h1 className="fs_24 fw-semibold pt-md-3 red_ff dashboard-text-color">
@@ -157,13 +161,19 @@ const Subscription = () => {
                         ) : (
                           <>
                             {" "}
-                            <Button
-                              variant="primary"
-                              onClick={() => setIsSelect(index)}
-                              className="w-100 "
+                            <Link
+                              href="/Dashboard/Payment"
+                              passHref
+                              className="w-100"
                             >
-                              {row.plan}
-                            </Button>
+                              <Button
+                                variant="primary"
+                                onClick={() => setIsSelect(index)}
+                                className="w-100 "
+                              >
+                                {row.plan}
+                              </Button>
+                            </Link>
                           </>
                         )}
                       </div>

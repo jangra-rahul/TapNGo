@@ -3,6 +3,7 @@ import { Row, Col, Card } from "react-bootstrap";
 import plush_Image from "../../../../public/assets/images/svg/push_icon.svg";
 import icon from "../../../../public/assets/images/svg/icon.svg";
 import Image from "next/image";
+import Link from "next/link";
 type AmountOption = {
   label: string;
   value: string;
@@ -172,9 +173,11 @@ const Manual = () => {
           </h4>
         </div>
         <div className="pt-5">
-          <button className="button-bg-color w-100 border-0 py-2 fs_16 red_ff text-white fw-semibold rounded-2 ">
-            Pay Now
-          </button>
+          <Link href="/Dashboard/Payment" passHref>
+            <button className="button-bg-color w-100 border-0 py-2 fs_16 red_ff text-white fw-semibold rounded-2">
+              Pay Now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

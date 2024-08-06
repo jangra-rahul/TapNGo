@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { GoChevronDown } from "react-icons/go";
+// import { GoChevronDown } from "react-icons/go";
 import { Col, Form, Nav, Row, Tab, Modal, Button } from "react-bootstrap";
 import qus_icon from "../../../../public/assets/images/svg/qus_icon.svg";
 import dowload_icon from "../../../../public/assets/images/svg/dowload_icon.svg";
@@ -9,28 +9,25 @@ import cercle_Image from "../../../../public/assets/images/svg/cercle_img.svg";
 import blue_image from "../../../../public/assets/images/svg/blue_box.svg";
 import yellow_image from "../../../../public/assets/images/svg/yellow_box.svg";
 import cercle_Img from "../../../assets/images/svg/HDFC_Card.svg";
-import Manual from "./Manual";
-import Auto from "./Auto";
-import Subscription from "./Subscription";
-import "./homedashboard.css";
-import Layout from "@/app/components/Layout/Laytout";
+import limit_Img from "../../../assets/images/svg/limit_icon.svg";
+import edit_Img from "../../../assets/images/svg/edit_icon.svg";
+import card_icon from "../../../../public/assets/images/svg/card_icon.svg";
+
+import "../../Dashboard/HomeDashboard/homedashboard.css";
 import DownloadCardModal from "../FamilyMember/DownloadCardModal";
-import Link from "next/link";
-import CreditModeModal from "./CreditModeModal";
+import Layout from "@/app/components/Layout/Laytout";
 
-import PhysicalCard from "./PhysicalCard";
-import ChooseCardModal from "./ChooseCardModal";
-
-type TabType = "Manual" | "Auto" | "Subscription";
-
-const Home: React.FC = () => {
-  const [selectedTab, setSelectedTab] = useState<TabType>("Manual");
+const Page = () => {
   const [showModal, setShowModal] = useState(false);
+  const [showModal1, setShowModal1] = useState(false);
+  const [limitshowModal1, setLimitShowModal1] = useState(false);
   const handleShowModal = () => setShowModal(true);
+  const handleShowModal1 = () => setShowModal1(true);
+  const handleLimitShowModal = () => setLimitShowModal1(true);
   const [toggleState, setToggleState] = useState(false);
   const [showNewModal, setShowNewModal] = useState(false);
 
-  const handleTabClick = (tab: TabType) => {
+  const handleTabClick = (tab) => {
     setSelectedTab(tab);
   };
   const handleDocumentClick = (event) => {
@@ -54,26 +51,14 @@ const Home: React.FC = () => {
   }, [showModal]);
 
   const [showDownloadModal, setShowDownloadModal] = useState(false);
-  const [showCreditModeModal, setShowCreditModeModal] = useState(false);
-
-  const [showPhysicalCardModal, setShowPhysicalCardModal] = useState(false);
-  const [showChooseCardModalModal, setShowChooseCardModalModal] =
-    useState(false);
-
   const handleCloseDownloadModal = () => setShowDownloadModal(false);
   const handleShowDownloadModal = () => setShowDownloadModal(true);
-  const handleCreditModeModal = () => {
-    setShowCreditModeModal(!showCreditModeModal);
-    setShowNewModal(false);
-  };
-  const handleChooseCardModalModal = () => {
-    setShowChooseCardModalModal(!showChooseCardModalModal);
-  };
-
-  const handlePhysicalCardModal = () =>
-    setShowPhysicalCardModal(!showPhysicalCardModal);
 
   const handleShowNewModal = () => setShowNewModal(true);
+  const handleCloseNewModal = () => setShowNewModal(false);
+  const handleLimitModalClose = () => setLimitShowModal1(false);
+  const handleModalClose1 = () => setShowModal1(false);
+  const handleModalShow = () => setShowModal(true);
   return (
     <Layout>
       {showModal && (
@@ -149,11 +134,8 @@ const Home: React.FC = () => {
                   <div className="card  d-flex flex-column justify-content-between h-100 p-md-4 p-3 border-0">
                     <div className="d-flex justify-content-between align-items-center pb-4">
                       <p className="fs_20 red_ff fw-semibold dashboard-text-color mb-0">
-                        <Link href="/Dashboard/Postpaidrecharge" passHref>
-                          Summary
-                        </Link>
+                        Summary
                       </p>
-
                       <span>
                         <Form.Select
                           className=" py-1"
@@ -290,146 +272,136 @@ const Home: React.FC = () => {
               </Row>
             </Col>
             <Col xl={5} className="mt-4 mt-xl-0">
-              <div className="card h-100 d-flex flex-column flex-grow-1 border-0 p-md-4 p-3">
+              <div className="card h-100 red_ff d-flex flex-column flex-grow-1 border-0 p-md-4 p-3">
                 <div>
                   <div className="d-md-flex flex-wrap justify-content-between align-items-center">
                     <span className="">
-                      <p className="fs_20 fw-semibold red_ff  dashboard-text-color">
-                        {" "}
-                        Prepaid Recharge{" "}
+                      <p className="fs_24 fw-semibold red_ff  dashboard-text-color">
+                        Prepaid Recharge
                       </p>
                     </span>
-                    <div className="d-flex mt-3 mt-sm-0 text-color align-items-center gap-3">
-                      <p>Auto Top-up</p>
-                      <div className="border rounded-5 mb-3 m-0 ">
-                        <Form className="border-1  rounded-1  ps-1 pe-2 d-flex justify-content-center">
-                          <Form.Check
-                            type="switch"
-                            id="custom-switch"
-                            label={
-                              <span className={toggleState ? "color_blue" : ""}>
-                                {toggleState ? "On" : "Off"}
-                              </span>
-                            }
-                            onChange={(event) => {
-                              setToggleState(event.target.checked);
-                            }}
-                          />
-                        </Form>
+                  </div>
+                  <p className=" fs_14 color_lightblack">
+                    With auto recharge, we will recharge your card / fob when
+                    your balance fails below the selected threshold.
+                  </p>
+                  <div className="d-flex justify-content-between mt-4">
+                    <div>
+                      <div className="d-flex gap-2 align-items-center">
+                        <p className="mb-0 fs_17 fw-semibold ">Credit Limit</p>
+                        <Image
+                          className="mt-1"
+                          src={limit_Img}
+                          alt="cercle_Image"
+                        />
+                      </div>
+                      <div>
+                        <div className="d-flex gap-2 mt-1 align-items-center">
+                          <p className="mb-0 fs_17 fw-semibold ">$20,000.00 </p>
+                          <a
+                            onClick={handleLimitShowModal}
+                            className=" color_blue text-decoration-underline"
+                            href="#"
+                          >
+                            Update Limit
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div className=" gap-2 align-items-center">
+                        <p className="mb-0 fs_17 fw-semibold ">
+                          Billing Frequency
+                        </p>
+                        <div className="d-flex align-items-center gap-1">
+                          <p className="mb-0">Monthly</p>
+                          <span>|</span>
+                          <div className="d-flex align-items-center gap-1">
+                            <Image
+                              className="mt-1 cursor-pointer"
+                              src={edit_Img}
+                              alt="cercle_Image"
+                            />
+                            <a
+                              className=" text-decoration-underline color_blue"
+                              href="#"
+                            >
+                              Edit
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
+                  <div className="box mt-4 p-3 rounded-2">
+                    <div className="d-flex align-items-center justify-content-between">
+                      <h4 className=" fs_20 mb-0 red_ff">Latest Bill</h4>
+                      <a
+                        className=" text-decoration-underline color_blue"
+                        href="#"
+                      >
+                        View History
+                      </a>
+                    </div>
+                    <div className="border mt-3"></div>
+                    <div className="d-flex mt-4 justify-content-between align-items-center">
+                      <p className="mb-0">Amount</p>
+                      <p className="mb-0">Daue date : 28 Feb 2024</p>
+                    </div>
+                    <h4 className=" fs_24 mt-2 red_ff fw-semibold">$107.52</h4>
+                    <a
+                      className="mt-2 text-decoration-underline color_blue"
+                      href="#"
+                    >
+                      Pay now and get 10% Flat off
+                    </a>
+                  </div>
+                  <h5 className=" fs_18 red_ff fw-semibold mt-4">
+                    Payment From
+                  </h5>
+                  <div className="card p-2 mt-2">
+                    <div className="d-flex align-items-center justify-content-between ">
+                      <div className="d-flex w-100 align-items-center">
+                        <Image src={card_icon} alt="card_icon" />
+                        <input
+                          className=" w-100 border-0 px-3"
+                          type="password"
+                          placeholder="**** **** **** 1234"
+                        />
+                      </div>
+                      <button className=" bg_yellow py-1 rounded-2 border-0 px-2 red_ff fs_13">
+                        Primary
+                      </button>
+                    </div>
+                  </div>
+                  <button className=" red_ff color_blue mb-2 py-2 custom_bolrder mt-3">
+                    Add Other Payment Method
+                  </button>
 
-                  <Row className="mt-4">
-                    <Col
-                      xs={4}
-                      className="pe-0 text-center"
-                      onClick={() => handleTabClick("Manual")}
-                    >
-                      <Nav.Link
-                        href="#"
-                        className={
-                          selectedTab === "Manual"
-                            ? " border_radius_blue color_blue"
-                            : ""
-                        }
-                      >
-                        <h3 className="red_ff fs_16">Manual</h3>
-                      </Nav.Link>
-                      {selectedTab === "Manual" ? (
-                        <div className="mb-2   border"></div>
-                      ) : (
-                        <>
-                          <div className="    border"></div>
-                        </>
-                      )}
-                    </Col>
-                    <Col
-                      xs={4}
-                      className="px-0 text-center"
-                      onClick={() => handleTabClick("Auto")}
-                    >
-                      <Nav.Link
-                        href="#"
-                        className={
-                          selectedTab === "Auto"
-                            ? " border_radius_blue color_blue"
-                            : ""
-                        }
-                      >
-                        <h3 className="red_ff fs_16">Auto</h3>
-                      </Nav.Link>
-                      {selectedTab === "Auto" ? (
-                        <div className="mb-3  border"></div>
-                      ) : (
-                        <>
-                          <div className="mt-2  border"></div>
-                        </>
-                      )}
-                    </Col>
-                    <Col
-                      xs={4}
-                      className="ps-0 text-center"
-                      onClick={() => handleTabClick("Subscription")}
-                    >
-                      <Nav.Link
-                        href="#"
-                        className={
-                          selectedTab === "Subscription"
-                            ? "active-tab border_radius_blue color_blue"
-                            : ""
-                        }
-                      >
-                        <h3 className="red_ff fs_16">Subscription</h3>
-                      </Nav.Link>
-                      {selectedTab === "Subscription" ? (
-                        <div className="mb-3   border"></div>
-                      ) : (
-                        <>
-                          <div className="mt-2   border"></div>
-                        </>
-                      )}
-                    </Col>
-                  </Row>
+                  <span
+                    onClick={handleShowModal1}
+                    className="mb-5 cursor-pointer text-decoration-underline color_blue red_ff mt-2"
+                  >
+                    Manage Card
+                  </span>
+                  <div
+                    className="d-flex flex-column justify-content-end"
+                    style={{ marginTop: "120px" }}
+                  >
+                    <Button className="w-100 py-2 fs-16 fw-semibold rounded-2 bg-primary text-white">
+                      Pay Now
+                    </Button>
+                  </div>
                 </div>
-                <Tab.Content className="mt-2">
-                  <Tab.Pane
-                    eventKey="Manual"
-                    className={selectedTab === "Manual" ? "show active" : ""}
-                  >
-                    <Manual />
-                  </Tab.Pane>
-                  <Tab.Pane
-                    eventKey="Auto"
-                    className={selectedTab === "Auto" ? "show active" : ""}
-                  >
-                    <Auto />
-                  </Tab.Pane>
-                  <Tab.Pane
-                    eventKey="Subscription"
-                    className={
-                      selectedTab === "Subscription" ? "show active" : ""
-                    }
-                  >
-                    <Subscription />
-                  </Tab.Pane>
-                </Tab.Content>
               </div>
             </Col>
           </Row>
-          <div className="d-flex justify-content-end gap-3 mt-4">
-            <span
-              onClick={handleChooseCardModalModal}
-              className=" cursor-pointer"
-            >
-              Click
-            </span>
-          </div>
+
           <Modal
             className=" red_ff"
             centered
             show={showNewModal}
-            onHide={() => setShowNewModal(false)}
+            onHide={handleCloseNewModal}
           >
             <Modal.Header className="border-0" closeButton></Modal.Header>
             <Modal.Body className="text-center py-0 ">
@@ -463,7 +435,7 @@ const Home: React.FC = () => {
             <Modal.Footer className="border-0">
               <button
                 className="w-100 bg_darkblue py-3 border-0 text-white fw-medium rounded-2 mb-3"
-                onClick={handleCreditModeModal}
+                onClick={handleCloseNewModal}
               >
                 Save Changes
               </button>
@@ -474,23 +446,79 @@ const Home: React.FC = () => {
             show={showDownloadModal}
             handleClose={handleCloseDownloadModal}
           />
-          <CreditModeModal
-            show={showCreditModeModal}
-            handleClose={handleCreditModeModal}
-          />
-          <ChooseCardModal
-            show={showChooseCardModalModal}
-            handleClose={handleChooseCardModalModal}
-          />
-
-          <PhysicalCard
-            show={showPhysicalCardModal}
-            handleClose={handlePhysicalCardModal}
-          />
+          <Modal show={showModal1} centered onHide={handleModalClose1}>
+            <Modal.Header closeButton className="border-0 px-4">
+              <Modal.Title className="red_ff">Manage Card</Modal.Title>
+            </Modal.Header>
+            <Modal.Body className="border-0 pt-1 px-4">
+              <div className="card p-2 mt-2">
+                <div className="d-flex align-items-center justify-content-between ">
+                  <div className="d-flex w-100 align-items-center">
+                    <Image src={card_icon} alt="card_icon" />
+                    <input
+                      className=" w-100 border-0 px-3"
+                      type="password"
+                      placeholder="**** **** **** 1234"
+                    />
+                  </div>
+                  <button className=" bg_yellow py-1 rounded-2 border-0 px-2 red_ff fs_13">
+                    Primary
+                  </button>
+                </div>
+              </div>
+            </Modal.Body>
+            <Modal.Footer className="border-0 pt-5 mt-5 px-4">
+              <Button className="w-100 py-2 fs-16 fw-semibold mt-5 rounded-2 bg-primary text-white">
+                Add Backup Payment Method
+              </Button>
+            </Modal.Footer>
+          </Modal>
+          <Modal show={limitshowModal1} centered onHide={handleLimitModalClose}>
+            <Modal.Header closeButton className="border-0 px-4"></Modal.Header>
+            <Modal.Body className="border-0 pt-1 px-4">
+              <h4 className=" fs_24 fw-semibold text-center red_ff mt-2 mb-3">
+                Update Credit Limit
+              </h4>
+              <div className="d-flex mt-4 flex-column">
+                <label className="px-0 red_ff" htmlFor="#">
+                  Current Credit Limit
+                </label>
+                <input
+                  className="py-2 mt-2 px-3 rounded-2 w-100 border-body border"
+                  type="text"
+                />
+              </div>
+              <div className="d-flex mt-2 flex-column">
+                <label className="px-0 red_ff" htmlFor="#">
+                  New Credit Limit
+                </label>
+                <input
+                  placeholder="$50,000"
+                  className="py-2 fw-bold mt-2 px-3 rounded-2 w-100 border-body border"
+                  type="text"
+                />
+              </div>
+              <div className="d-flex mt-2 flex-column">
+                <label className="px-0 red_ff" htmlFor="#">
+                  Billing Frequency
+                </label>
+                <input
+                  placeholder="Monthly"
+                  className="py-2 fw-bold mt-2 px-3 rounded-2 w-100 border-body border"
+                  type="text"
+                />
+              </div>
+            </Modal.Body>
+            <Modal.Footer className="border-0 mb-3 px-4">
+              <Button className="w-100 py-2 fs-16 fw-semibold rounded-2 bg-primary text-white">
+                Submit
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </div>
     </Layout>
   );
 };
 
-export default Home;
+export default Page;

@@ -127,8 +127,11 @@ const Usages: React.FC = () => {
 
   return (
     <Layout>
-      <div className="px-3">
-        <div className="bg-white mt-3 custom-padding rounded-2">
+      <div className="px-1">
+        <div
+          className="bg-white mt-3 custom-padding rounded-2"
+          style={{ minHeight: "87vh" }}
+        >
           <Row>
             <Col xs={12} md={8}>
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 rounded">

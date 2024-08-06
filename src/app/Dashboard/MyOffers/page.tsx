@@ -25,7 +25,10 @@ const Myoffer = () => {
   return (
     <>
       <Layout>
-        <div className="px-1 bg-white  mt-4 rounded-4 mx-3">
+        <div
+          className="px-2 bg-white  mt-4 rounded-4 mx-2"
+          style={{ minHeight: "87vh" }}
+        >
           <div className=" bg-white rounded-3">
             <div className="w-100 p-0 m-0 rounded-3">
               <h1 className="pt-4 ps-3 fs_28 fw-semibold red_ff text-dark">
@@ -89,7 +92,7 @@ const Myoffer = () => {
               </Row>
 
               <Modal show={showModal} onHide={handleModalClose} centered>
-                <Modal.Header closeButton>
+                <Modal.Header className="pb-0 border-0 t-pr" closeButton>
                   <Modal.Title>Discount Coupon</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
@@ -99,23 +102,32 @@ const Myoffer = () => {
                     alt="Coupon Details"
                   />
                   <div className="d-flex justify-content-between mt-4 align-items-center">
-                    <h4 className="fs_16 red_ff fw-semibold  text-dark">
-                      Details
+                    <h4 className="fs_18 red_ff fw-semibold mb-0 text-dark">
+                      Details :
                     </h4>
                     <p className="mb-0 fs_14">Expire on: 28 Feb 2024</p>
                   </div>
-                  <p className="fs_14 red_ff fw-normal mt-2 text-dark">
-                    1. Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <p className="fs_14 red_ff fw-normal mt-2 text-dark">
-                    2. Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
-                  <p className="fs_14 red_ff fw-normal mt-2 text-dark">
-                    3. Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                  </p>
+                  <div className="d-flex gap-2 mt-3 align-items-start">
+                    <span>1.</span>
+                    <p className="fs_14 red_ff fw-normal mb-0">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
+                  <div className="d-flex gap-2 mt-3 align-items-start">
+                    <span>2.</span>
+                    <p className="fs_14 red_ff fw-normal mb-0">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
+                  <div className="d-flex gap-2 mt-3 align-items-start">
+                    <span>3.</span>
+                    <p className="fs_14 red_ff fw-normal mb-0">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </p>
+                  </div>
                 </Modal.Body>
                 <Modal.Footer className="border-0">
                   <Button
@@ -167,7 +179,7 @@ export default Myoffer;
 //     <Container className='w-100  p-0 m-0'>
 //             <Row className='pe-2 '>
 //             <picture>
-//               <source srcSet={resposiveImage} media="(max-width: 768px)" />
+//               <rcSet={resposiveImage} media="(max-width: 768px)" />
 //               <Image className='w-100 h-100'src={banner} alt="Banner" onClick={handleModalOpen}  />
 //             </picture>
 //           </Row>
