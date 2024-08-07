@@ -57,8 +57,8 @@ const Home: React.FC = () => {
   const [showCreditModeModal, setShowCreditModeModal] = useState(false);
 
   const [showPhysicalCardModal, setShowPhysicalCardModal] = useState(false);
-  const [showChooseCardModalModal, setShowChooseCardModalModal] =
-    useState(false);
+  // const [showChooseCardModalModal, setShowChooseCardModalModal] =
+  //   useState(false);
 
   const handleCloseDownloadModal = () => setShowDownloadModal(false);
   const handleShowDownloadModal = () => setShowDownloadModal(true);
@@ -66,9 +66,9 @@ const Home: React.FC = () => {
     setShowCreditModeModal(!showCreditModeModal);
     setShowNewModal(false);
   };
-  const handleChooseCardModalModal = () => {
-    setShowChooseCardModalModal(!showChooseCardModalModal);
-  };
+  // const handleChooseCardModalModal = () => {
+  //   setShowChooseCardModalModal(!showChooseCardModalModal);
+  // };
 
   const handlePhysicalCardModal = () =>
     setShowPhysicalCardModal(!showPhysicalCardModal);
@@ -229,7 +229,7 @@ const Home: React.FC = () => {
                         $103.21
                       </p>
                     </div>
-                    <div className="border mt-3"></div>
+                    x<div className="border mt-3"></div>
                     <div className="d-flex mt-3 justify-content-between align-items-center">
                       <div>
                         <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
@@ -285,12 +285,26 @@ const Home: React.FC = () => {
                         $5.45
                       </p>
                     </div>
+                    <div className="border mt-3"></div>
+                    <div className="d-flex mt-3 justify-content-between align-items-center">
+                      <div>
+                        <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
+                          Auto Top-Up
+                        </p>
+                        <p className="mb-0 red_ff fs_14 text-color">
+                          04 January 2024
+                        </p>
+                      </div>
+                      <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
+                        $6.45
+                      </p>
+                    </div>
                   </div>
                 </Col>
               </Row>
             </Col>
             <Col xl={5} className="mt-4 mt-xl-0">
-              <div className="card h-100 d-flex flex-column flex-grow-1 border-0 p-md-4 p-3">
+              <div className="card h-100 d-flex flex-column m-0 flex-grow-1 border-0 p-md-4 p-3">
                 <div>
                   <div className="d-md-flex flex-wrap justify-content-between align-items-center">
                     <span className="">
@@ -417,14 +431,7 @@ const Home: React.FC = () => {
               </div>
             </Col>
           </Row>
-          <div className="d-flex justify-content-end gap-3 mt-4">
-            <span
-              onClick={handleChooseCardModalModal}
-              className=" cursor-pointer"
-            >
-              Click
-            </span>
-          </div>
+
           <Modal
             className=" red_ff"
             centered
@@ -465,7 +472,7 @@ const Home: React.FC = () => {
                 className="w-100 bg_darkblue py-3 border-0 text-white fw-medium rounded-2 mb-3"
                 onClick={handleCreditModeModal}
               >
-                Save Changes
+                Request Replacement
               </button>
             </Modal.Footer>
           </Modal>
@@ -478,10 +485,10 @@ const Home: React.FC = () => {
             show={showCreditModeModal}
             handleClose={handleCreditModeModal}
           />
-          <ChooseCardModal
+          {/* <ChooseCardModal
             show={showChooseCardModalModal}
             handleClose={handleChooseCardModalModal}
-          />
+          /> */}
 
           <PhysicalCard
             show={showPhysicalCardModal}

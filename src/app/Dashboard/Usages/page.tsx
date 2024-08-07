@@ -43,6 +43,7 @@ const Usages: React.FC = () => {
           },
           {
             label: "Spending",
+
             backgroundColor: "#1364F1",
             data: [110, 80, 140, 120, 140, 110, 70, 80, 120, 120, 100, 70],
             barThickness: 20,
@@ -69,9 +70,9 @@ const Usages: React.FC = () => {
             boxWidth: 10,
             fontColor: "rgba(0,0,0,.7)", // Adjust this value to make the boxes narrower
           },
-          styles: {
-            display: "none",
-          },
+          // styles: {
+          //   display: "none",
+          // },
           className: "custom-legend",
           align: "start",
           position: "top",

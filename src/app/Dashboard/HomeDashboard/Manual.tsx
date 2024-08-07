@@ -172,7 +172,7 @@ const Manual = () => {
             $00.00
           </h4>
         </div>
-        <div className="pt-5">
+        <div className="pt-5" style={{ marginTop: "90px" }}>
           <Link href="/Dashboard/Payment" passHref>
             <button className="button-bg-color w-100 border-0 py-2 fs_16 red_ff text-white fw-semibold rounded-2">
               Pay Now

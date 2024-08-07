@@ -36,10 +36,10 @@ const LoginAndSignupHeader: React.FC = () => {
                   className={
                     selectedTab === "login"
                       ? "active-tab color_blue fw-semibold red_ff"
-                      : ""
+                      : "text-black"
                   }
                 >
-                  <p className="red_ff fs_24 fw-normal text-color ">Login</p>
+                  <p className="red_ff fs_24 fw-normal  ">Login</p>
                 </Nav.Link>
                 {selectedTab === "login" ? (
                   <div className="mt-2 custom_border1 border-1 border"></div>
@@ -56,10 +56,10 @@ const LoginAndSignupHeader: React.FC = () => {
                   className={
                     selectedTab === "register"
                       ? "active-tab color_blue fw-semibold red_ff"
-                      : ""
+                      : "text-black"
                   }
                 >
-                  <p className="red_ff fs_24 fw-normal text-color ">Register</p>
+                  <p className="red_ff fs_24 fw-normal  ">Register</p>
                 </Nav.Link>
                 {selectedTab === "register" ? (
                   <div className="mt-2 custom_border1 border-1 border"></div>

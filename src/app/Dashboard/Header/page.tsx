@@ -108,12 +108,10 @@ const Navbar = () => {
                 <Accordion className="w-100">
                   <Accordion.Item
                     eventKey="0"
-                    // className="position-relative bg-white"
                     className={`position-relative  ${
                       isOpen ? "bg-white rounded-5 border border-1" : ""
                     }`}
                   >
-                    {/* <div className="bg-white rounded-top-5"> */}
                     <Accordion.Header onClick={() => setIsOpen(!isOpen)}>
                       <div className="d-flex align-items-center gap-2">
                         <Image
@@ -144,7 +142,6 @@ const Navbar = () => {
                         <p className="mb-0 color_lightblack red_ff ">Log out</p>
                       </Link>
                     </Accordion.Body>
-                    {/* </div> */}
                   </Accordion.Item>
                 </Accordion>
               </div>

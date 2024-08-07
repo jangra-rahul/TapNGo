@@ -29,7 +29,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   /* -------------------- Font-Size -------------------- */
   --fs-xsm: 13px;
@@ -42,7 +41,7 @@
   --fs-4xl: 36px;
   --fs-5xl: 40px;
   --fs-6xl: 32px;
-  --fs-7xl:28px;
+  --fs-7xl: 28px;
   /* ---------------------- Color ---------------------- */
   --clr-primary: #1364f1;
   --clr-lightblack: #151515;
@@ -88,7 +87,7 @@
   color: var(--clr-primary) !important;
 }
 .color_lightblack {
-  color: var(--clr-lightblack);
+  color: var(--clr-lightblack) !important;
 }
 .bg_theme {
   background-color: var(--bg-theme);
@@ -106,15 +105,14 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-.common-border{
-  border: 1px solid #CECECE4D;
+.common-border {
+  border: 1px solid #cecece4d;
 }
-.common-button{
+.common-button {
   background-color: #1364f1;
   color: white;
   font: 600;
   font-size: 16px;
-
 }
 
 @media (max-width: 576px) {
