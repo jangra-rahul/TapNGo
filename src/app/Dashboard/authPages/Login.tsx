@@ -38,14 +38,15 @@ const Login = () => {
               className=" border px-3 py-2 rounded-2 border-body border-2"
             />
           </Form.Group>
-
-          <Button
-            variant="primary"
-            type="submit"
-            className="w-100 mt-4 py-2 fs-16 fw-semibold red_ff rounded-2"
-          >
-            Log In
-          </Button>
+          <Link href="/Dashboard/HomeDashboard" className="color_blue">
+            <Button
+              variant="primary"
+              type="submit"
+              className="w-100 mt-4 py-2 fs-16 fw-semibold red_ff rounded-2"
+            >
+              Log In
+            </Button>
+          </Link>
         </Form>
         <footer className="mt-3">
           <p className="red_ff color_lightblack fw-medium fs-14">
