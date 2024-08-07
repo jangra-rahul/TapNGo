@@ -63,6 +63,21 @@ input {
     padding: 0px;
   }
 }
+
+:where(.css-1uq9j6g).ant-menu-inline .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu-vertical .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu-inline .ant-menu-submenu-title,
+:where(.css-1uq9j6g).ant-menu-vertical .ant-menu-submenu-title {
+  margin: 10px 0 !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+
+:where(.css-1uq9j6g).ant-menu .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu .ant-menu-submenu,
+:where(.css-1uq9j6g).ant-menu .ant-menu-submenu-title {
+  border-radius: 0 !important;
+}
 /* Add this to your custom CSS file */
 .custom-container {
   max-width: 500px;
@@ -124,4 +139,12 @@ input {
   .custom-checkbox {
     font-size: 0.875rem;
   }
+}
+
+input {
+  background-color: transparent !important;
+}
+
+select {
+  background-color: white !important;
 }

@@ -128,3 +128,18 @@
 .modal-backdrop {
   --bs-backdrop-opacity: 30% !important;
 }
+
+:where(.css-1uq9j6g).ant-menu-inline .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu-vertical .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu-inline .ant-menu-submenu-title,
+:where(.css-1uq9j6g).ant-menu-vertical .ant-menu-submenu-title {
+  margin: 10px 0 !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+
+:where(.css-1uq9j6g).ant-menu .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu .ant-menu-submenu,
+:where(.css-1uq9j6g).ant-menu .ant-menu-submenu-title {
+  border-radius: 0 !important;
+}

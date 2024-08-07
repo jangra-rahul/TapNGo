@@ -1,75 +1,80 @@
 .containerr {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-   
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .section {
-    background-color: white !important;
-    width: 100vw !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+  background-color: white !important;
+  width: 100vw !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+select {
+  background-color: transparent !important;
+  color: black !important;
+}
+input {
+  background-color: transparent !important;
 }
 
 .mein {
-    width:100%;
-    max-width: 532px !important;
-    font-size: 2em;
-    background-color: white;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  max-width: 532px !important;
+  font-size: 2em;
+  background-color: white;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.headingimg{
-  
+.headingimg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.arrow-icon{
-    display: none;
+.arrow-icon {
+  display: none;
 }
-.red-ff-family{
-    font-family: "Red Hat Text", sans-serif !important;
+.red-ff-family {
+  font-family: "Red Hat Text", sans-serif !important;
 }
-.source-family{
-    font-family: "Source Sans Pro", sans-serif !important;
+.source-family {
+  font-family: "Source Sans Pro", sans-serif !important;
 }
-.custom-style{
-    font-size: 24px;
-    font-weight: 600;
-    font-family: "Red Hat Text", sans-serif !important;
+.custom-style {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Red Hat Text", sans-serif !important;
 }
 @media (max-width: 768px) {
-.mein{
-    width:100% !important;
+  .mein {
+    width: 100% !important;
     padding-top: 0px !important;
     padding: 2rem !important;
-}
-.hey{
+  }
+  .hey {
     display: none !important;
-}
-.andrew{
+  }
+  .andrew {
     display: none !important;
-}
-.arrow-icon{
+  }
+  .arrow-icon {
     display: flex !important;
-}
-.headingimg{
+  }
+  .headingimg {
     margin: 0% !important;
     display: flex !important;
     gap: 10px;
     text-align: center;
     align-items: center;
-
-}
+  }
 }

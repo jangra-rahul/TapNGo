@@ -21,7 +21,7 @@ const VehicleDetails: React.FC<Props> = ({ isModalOpen, closeModal }) => {
         </Button>
         <Modal.Header className="border-0">
           <Modal.Title className="w-100 text-center">
-            <h4 className="mt-3 red_ff fw-semibold fs_24">
+            <h4 className="mt-3 red_ff text-black fw-semibold fs_24">
               Wish to attach your vehicle<br></br> details?
             </h4>
           </Modal.Title>

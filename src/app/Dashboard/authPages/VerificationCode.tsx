@@ -71,10 +71,10 @@ const VerificationCode: React.FC<Props> = ({ isModalOpen, closeModal }) => {
             />
           </a>
           <Modal.Header className="d-flex flex-column border-0">
-            <Modal.Title className="text-center mt-3 red_ff fs_24">
+            <Modal.Title className="text-center text-black mt-3 red_ff fs_24">
               Verification Code
             </Modal.Title>
-            <p className="red_ff fs_16 mt-2 fw-normal text-center mb-0">
+            <p className="red_ff color_lightblack fs_16 mt-2 fw-normal text-center mb-0">
               We have sent the OTP code to xyz@gmail.com for the verification
               process.
             </p>
@@ -129,12 +129,12 @@ const VerificationCode: React.FC<Props> = ({ isModalOpen, closeModal }) => {
               <div className="d-flex justify-content-center">
                 <Image width={100} src={Success_icon} alt="Success_icon" />
               </div>
-              <h5 className=" fw-semibold red_ff mt-3 fs_20">
+              <h5 className=" text-black fw-semibold red_ff mt-3 fs_20">
                 {" "}
                 Verification Successful
               </h5>
             </Modal.Title>
-            <p className="red_ff mt-2 fs_16 fw-normal text-center mb-0">
+            <p className="red_ff mt-2 color_lightblack fs_16 fw-normal text-center mb-0">
               You have successfully verified your mobile number and email
               address.
             </p>

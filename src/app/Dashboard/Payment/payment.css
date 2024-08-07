@@ -58,6 +58,15 @@
 input {
   outline: none !important;
 }
+
+select {
+  background-color: transparent !important;
+  color: black !important;
+}
+input {
+  background-color: transparent !important;
+}
+
 @media (max-width: 768px) {
   .containerr {
     height: 100%;

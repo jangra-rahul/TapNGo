@@ -174,17 +174,6 @@ input {
   z-index: 15;
 }
 
-:where(.css-dev-only-do-not-override-m4timi).ant-menu-inline .ant-menu-item,
-:where(.css-dev-only-do-not-override-m4timi).ant-menu-vertical .ant-menu-item,
-:where(.css-dev-only-do-not-override-m4timi).ant-menu-inline
-  .ant-menu-submenu-title,
-:where(.css-dev-only-do-not-override-m4timi).ant-menu-vertical
-  .ant-menu-submenu-title {
-  margin: 10px 0 !important;
-  border-radius: 0 !important;
-  width: 100% !important;
-}
-
 .bg_darkblue {
   background-color: #1364f1 !important;
 }
@@ -245,4 +234,28 @@ input {
 
 .card {
   margin: 0 !important;
+}
+
+:where(.css-1uq9j6g).ant-menu-inline .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu-vertical .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu-inline .ant-menu-submenu-title,
+:where(.css-1uq9j6g).ant-menu-vertical .ant-menu-submenu-title {
+  margin: 10px 0 !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+
+:where(.css-1uq9j6g).ant-menu .ant-menu-item,
+:where(.css-1uq9j6g).ant-menu .ant-menu-submenu,
+:where(.css-1uq9j6g).ant-menu .ant-menu-submenu-title {
+  border-radius: 0 !important;
+}
+
+input {
+  background-color: transparent !important;
+}
+
+select {
+  background-color: white !important;
+  color: black !important;
 }
