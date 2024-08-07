@@ -242,3 +242,7 @@ input {
     height: 95vh !important;
   }
 }
+
+.card {
+  margin: 0 !important;
+}
