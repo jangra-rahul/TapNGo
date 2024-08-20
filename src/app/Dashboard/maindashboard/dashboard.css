@@ -90,11 +90,11 @@
 }
 :where(.css-dev-only-do-not-override-m4timi).ant-layout .ant-layout-sider {
   width: 100% !important;
-  max-width: 360px !important;
+  max-width: 300px !important;
 }
 :where(.css-1uq9j6g).ant-layout .ant-layout-sider {
   width: 100% !important;
-  max-width: 360px !important;
+  max-width: 300px !important;
 }
 
 :where(.css-dev-only-do-not-override-1uq9j6g).ant-layout .ant-layout-sider {
