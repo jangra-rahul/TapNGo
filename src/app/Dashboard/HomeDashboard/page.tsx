@@ -442,7 +442,7 @@ const Home: React.FC = () => {
 
             <div className="px-3 pe-4 d-lg-none d-block">
               <Col xl={5} className="mt-4 mt-xl-0 ">
-                <div className="card h-100 d-flex flex-column m-0 flex-grow-1 border-0 p-md-4 p-3">
+                <div className="card h-100 d-flex flex-column mx-3 mx-lg-0 flex-grow-1 border-0 p-md-4 p-3">
                   <div>
                     <div className="d-md-flex flex-wrap justify-content-between align-items-center">
                       <span className="">
