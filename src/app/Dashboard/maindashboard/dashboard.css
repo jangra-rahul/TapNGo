@@ -92,7 +92,7 @@
   width: 100% !important;
   max-width: 360px !important;
 }
-::where(.css-1uq9j6g).ant-layout .ant-layout-sider {
+:where(.css-1uq9j6g).ant-layout .ant-layout-sider {
   width: 100% !important;
   max-width: 360px !important;
 }
