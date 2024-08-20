@@ -90,7 +90,12 @@
 }
 :where(.css-dev-only-do-not-override-m4timi).ant-layout .ant-layout-sider {
   width: 100% !important;
-  max-width: 250px !important;
+  max-width: 360px !important;
+}
+
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-layout .ant-layout-sider {
+  width: 100% !important;
+  max-width: 300px !important;
 }
 
 @media (max-width: 992px) {
