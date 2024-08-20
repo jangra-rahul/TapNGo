@@ -23,7 +23,7 @@ const FrequentlyAskedQuestion = () => {
         <div className="px-2 ">
           <div
             className="px-3  bg-white rounded-3   px-3 mt-4"
-            style={{ minHeight: "87vh" }}
+            style={{ minHeight: "84vh" }}
           >
             <h1 className="fs_28 fw-semibold red_ff dashboard-text-color py-3 mt-2 pt-4 px-3">
               Frequently Asked Question

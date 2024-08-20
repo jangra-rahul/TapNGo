@@ -24,7 +24,7 @@ const Cards: React.FC<CardsProps> = ({ onShowProfile }) => {
 
   return (
     <>
-      <Row className="pt-3 ps-md-3 px-3 bg-white">
+      <Row className="pt-4 mt-2 ps-md-3 px-3 bg-white">
         <Col xs={12} md={6} className="mb-4 ">
           <Card className="border-color d-flex flex-column justify-content-between h-100 p-0 m-0">
             <Card.Body className="p-0">

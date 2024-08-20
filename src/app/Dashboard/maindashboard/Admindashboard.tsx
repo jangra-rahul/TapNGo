@@ -66,7 +66,7 @@ const Admindashboard: React.FC = () => {
             top: 0,
             bottom: 0,
             height: "100vh",
-            width: "100% ",
+            // width: "100% ",
           }}
         >
           <Link href="#">
@@ -88,7 +88,7 @@ const Admindashboard: React.FC = () => {
               }
             >
               <Link href="/Dashboard/HomeDashboard">
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2  align-items-center">
                   <Image
                     src={home_icon}
                     alt="home_icon"
@@ -104,7 +104,7 @@ const Admindashboard: React.FC = () => {
               className={pathname === "/Dashboard/Usages" ? "active-color" : ""}
             >
               <Link href="/Dashboard/Usages">
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2  align-items-center">
                   <Image
                     src={usage_icon}
                     alt="Usage_icon"
@@ -124,7 +124,7 @@ const Admindashboard: React.FC = () => {
               }
             >
               <Link href="/Dashboard/Subcriptiondashboard">
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2  align-items-center">
                   <Image
                     src={subscription_icon}
                     alt="Subscription_icon"
@@ -142,7 +142,7 @@ const Admindashboard: React.FC = () => {
               }
             >
               <Link href="/Dashboard/FamilyMember">
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2  align-items-center">
                   <Image
                     src={Family_icon}
                     alt="FamilyM_icon"
@@ -160,7 +160,7 @@ const Admindashboard: React.FC = () => {
               }
             >
               <Link href="/Dashboard/MyOffers">
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2  align-items-center">
                   <Image
                     src={Offers_icon}
                     alt="Offer_icon"
@@ -176,7 +176,7 @@ const Admindashboard: React.FC = () => {
               className={pathname === "/Dashboard/FAQ" ? "active-color" : ""}
             >
               <Link href="/Dashboard/FAQ">
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2  align-items-center">
                   <Image src={Faq_icon} alt="faq_icon" width={16} height={16} />
                   <span className="mb-0 fs_14 red_ff">FAQ</span>
                 </div>
@@ -189,7 +189,7 @@ const Admindashboard: React.FC = () => {
               }
             >
               <Link href="/Dashboard/SupportPage">
-                <div className="d-flex gap-2 align-items-center">
+                <div className="d-flex gap-2  align-items-center">
                   <Image
                     src={Support_icon}
                     alt="Support_icon"

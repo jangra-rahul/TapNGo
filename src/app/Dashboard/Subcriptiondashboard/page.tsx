@@ -63,7 +63,7 @@ const Subscription = () => {
         <div className="px-2">
           <div
             className="rounded-2 p-md-4 p-3 mt-4 bg-white"
-            style={{ minHeight: "87vh" }}
+            style={{ minHeight: "84vh" }}
           >
             <Row className="align-items-center">
               <Col xs={12} className="ms-md-2">

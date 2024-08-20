@@ -40,7 +40,7 @@ const FamilyMember = () => {
       <div className="px-2">
         <div
           className="py-1 mt-3 px-4 rounded-2 bg-white"
-          style={{ minHeight: "87vh" }}
+          style={{ minHeight: "84vh" }}
         >
           <h1 className="pb-2 fw-semibold fs_28  red_ff dashboard-text-color pt-4">
             Family Members
@@ -236,7 +236,7 @@ const FamilyMember = () => {
                   </div>
                   <hr />
                   <p className="px-3 fs_18 pb-3 fw-semibold m-0">Color</p>
-                  <div className="d-flex justify-content-evenly flex-nowrap">
+                  <div className="d-flex flex-wrap">
                     <span className="circle bg-0  rounded-circle d-flex justify-content-center align-items-center text-wrap">
                       <div className="d-flex  ">
                         <Image width={20} src={Arrow} alt="" />
@@ -246,8 +246,7 @@ const FamilyMember = () => {
                     <span className="circle bg-2   rounded-circle"></span>
                     <span className="circle bg-3   rounded-circle"></span>
                     <span className="circle bg-4   rounded-circle"></span>
-                  </div>
-                  <div className=" d-flex justify-content-evenly flex-nowrap  pt-2 ">
+
                     <span className="circle bg-5 rounded-circle"></span>
                     <span className="circle bg-6 rounded-circle"></span>
                     <span className="circle bg-4 rounded-circle"></span>

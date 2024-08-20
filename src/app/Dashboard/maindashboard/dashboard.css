@@ -88,6 +88,10 @@
 :where(.css-dev-only-do-not-override-zg0ahe).ant-drawer .ant-drawer-content {
   width: 70% !important;
 }
+:where(.css-dev-only-do-not-override-m4timi).ant-layout .ant-layout-sider {
+  width: 100% !important;
+  max-width: 250px !important;
+}
 
 @media (max-width: 992px) {
   .header-responsive .menu-button {

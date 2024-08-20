@@ -14,8 +14,24 @@ import Link from "next/link";
 import resicon from "../../../assets/images/svg/responsiveicon.svg";
 import "../../../app/Dashboard/FAQ/FaqDashboard.css";
 import "./payment.css";
+import { useRouter } from "next/navigation";
 const Payment = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [country, setCountry] = useState("India");
+  const router = useRouter(); // Use useRouter for navigation
+
+  const handleCountryChange = (e) => {
+    setCountry(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (country === "Other") {
+      router.push("/Dashboard/Paymentfail");
+    } else {
+      router.push("/Dashboard/paymentSucces");
+    }
+  };
   return (
     <>
       <div
@@ -130,12 +146,14 @@ const Payment = () => {
             >
               <div className="w-100 p-4 left-col ">
                 <p className="d-flex gap-3 position-relative  header-1 align-items-baseline ">
-                  <span
-                    className="arrow cursor-pointer position-absolute"
-                    style={{ left: "-32px", top: "1px" }}
-                  >
-                    <FaArrowLeft style={{ height: "24px", width: "24px" }} />
-                  </span>
+                  <Link href="/Dashboard/HomeDashboard">
+                    <span
+                      className="arrow cursor-pointer text-black position-absolute"
+                      style={{ left: "-32px", top: "1px" }}
+                    >
+                      <FaArrowLeft style={{ height: "24px", width: "24px" }} />
+                    </span>
+                  </Link>
 
                   <span
                     className="bg-primary text-white d-flex justify-content-center align-items-center   rounded-circle"
@@ -229,7 +247,7 @@ const Payment = () => {
                   <p className="text-center mb-4">
                     <Image src={pay} alt="" className="w-100" />
                   </p>
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div
                       className="d-flex align-items-center form-div gap-3"
                       style={{ width: "100%" }}
@@ -307,11 +325,14 @@ const Payment = () => {
                       <select
                         id="country"
                         className="w-100 py-2 mt-2 px-2 rounded-2 border border-body"
+                        value={country}
+                        onChange={handleCountryChange}
                       >
                         <option>India</option>
                         <option>United States</option>
                         <option>Canada</option>
                         <option>Australia</option>
+                        <option>Other</option>
                       </select>
                     </div>
                     <p className="text-muted text-xs mb-4">
@@ -320,14 +341,14 @@ const Payment = () => {
                       their terms.
                     </p>
 
-                    <Link href="/Dashboard/paymentSucces" passHref>
-                      <button
-                        type="submit"
-                        className="btn btn-dark btn-block w-100"
-                      >
-                        Pay Now
-                      </button>
-                    </Link>
+                    {/* <Link href="/Dashboard/paymentSucces" passHref> */}
+                    <button
+                      type="submit"
+                      className="btn btn-dark btn-block w-100"
+                    >
+                      Pay Now
+                    </button>
+                    {/* </Link> */}
                   </form>
                 </div>
               </div>

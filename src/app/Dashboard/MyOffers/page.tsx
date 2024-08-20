@@ -27,7 +27,7 @@ const Myoffer = () => {
       <Layout>
         <div
           className="px-2 bg-white  mt-4 rounded-4 mx-2"
-          style={{ minHeight: "87vh" }}
+          style={{ minHeight: "84vh" }}
         >
           <div className=" bg-white rounded-3">
             <div className="w-100 p-0 m-0 rounded-3">

@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Modal, Row } from "react-bootstrap";
 import Link from "next/link";
 import logo from "../../../assets/images/svg/tapngologo.svg";
 import logo2 from "../../../assets/images/svg/logo2.svg";
@@ -18,6 +18,10 @@ import "./success.css";
 
 const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [modalShow, setModalShow] = useState(false);
+
+  const handleModalClose = () => setModalShow(false);
+  const handleModalShow = () => setModalShow(true);
   return (
     <>
       <div className="containerr">
@@ -205,20 +209,49 @@ const Page = () => {
               loremipsum is a simply dummy text used in typing industry since
               1500s for <br /> the typography purpose and alignments
             </p>
-            <Link className="w-100 text-white" href="/Dashboard/Paymentfail">
-              <button
-                className="source-family w-100 text-white fs_16 rounded-2 fw-medium py-3"
-                style={{
-                  backgroundColor: "#1364F1",
-                  color: "white !important",
-                  borderColor: "transparent",
-                }}
-              >
-                Go Back to Home
-              </button>
-            </Link>
+
+            <button
+              className="source-family w-100 text-white fs_16 rounded-2 fw-medium py-3"
+              style={{
+                backgroundColor: "#1364F1",
+                color: "white !important",
+                borderColor: "transparent",
+              }}
+              onClick={handleModalShow}
+            >
+              Go Back to Home
+            </button>
           </div>
         </div>
+        <Modal
+          centered
+          className="text-center "
+          show={modalShow}
+          onHide={handleModalClose}
+        >
+          <Modal.Header
+            className="border-0 red_ff px-4 pt-4"
+            closeButton
+          ></Modal.Header>
+          <Modal.Body className="border-0 px-4">
+            <Modal.Title className=" fs_24 fw-semibold red_ff">
+              Backup Payment Method
+            </Modal.Title>
+            <p className="mb-0 mt-2 mb-0 red_ff color_lightblack">
+              Add Backup payment method now for<br></br> smooth payment from
+              anywhere anytime at <br></br>ease.
+            </p>
+          </Modal.Body>
+          <Modal.Footer className="border-0 px-4 pb-4">
+            <button
+              className="w-100 py-3 fw-medium text-white border-0 rounded-2 red_ff"
+              style={{ backgroundColor: "#1364F1" }}
+              onClick={handleModalClose}
+            >
+              Add Backup Payment Method
+            </button>
+          </Modal.Footer>
+        </Modal>
       </div>
     </>
   );

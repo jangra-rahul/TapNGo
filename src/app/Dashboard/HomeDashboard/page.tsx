@@ -79,13 +79,13 @@ const Home: React.FC = () => {
       {showModal && (
         <div className={`${showModal === true && "custom_all_dark"}`}></div>
       )}
-      <div className="px-2">
-        <div className="pb-4 pt-3 ">
-          <Row>
+      <div style={{ height: "96%" }} className="px-2">
+        <div className="pb-4 pt-3 h-100">
+          <Row className="h-100">
             <Col xl={7}>
-              <Row>
+              <Row className="h-100">
                 <Col md={7} className="  mt-md-0  rounded-2 ">
-                  <div className="card pt-4  d-flex flex-column justify-content-between h-100 p-md-4 p-3 border-0">
+                  <div className="card pt-4 d-flex flex-column justify-content-between h-100 p-md-4 p-3 border-0">
                     <div>
                       <p className=" fs_18 red_ff fw-normal mb-0 dashboard-text-color">
                         Current Balance
@@ -189,8 +189,11 @@ const Home: React.FC = () => {
                     </div>
                   </div>
                 </Col>
-                <Col xs={12} className="mt-4">
-                  <div className="card p-md-4 p-3 border-0">
+                <Col xs={12} className="mt-4 bg-white">
+                  <div
+                    style={{ height: "95%" }}
+                    className="card p-md-4 p-3 border-0 overflow-auto"
+                  >
                     <div className="d-flex justify-content-between align-items-center">
                       <h5 className="fs_20 dashboard-text-color fw-semibold source_ff">
                         Recent Usage
@@ -202,102 +205,107 @@ const Home: React.FC = () => {
                         View All
                       </a>
                     </div>
-                    <div className="d-flex mt-3 justify-content-between align-items-center">
-                      <div>
-                        <p className="mb-0 fs_16 red_ff dashboard-text-color fw-normal">
-                          Manual Recharge
-                        </p>
-                        <p className="mb-0 red_ff fs_14 text-color">
-                          04 January 2024
-                        </p>
-                      </div>
-                      <p className="fs_20 red_ff fw-semibold mb-0  dashboard-text-color">
-                        $1.33
-                      </p>
-                    </div>
-                    <div className="border mt-3"></div>
-                    <div className="d-flex mt-3 justify-content-between align-items-center">
-                      <div>
-                        <p className="mb-0 fs_16 dashboard-text-color red_ff fw-normal">
-                          Auto Top-Up
-                        </p>
-                        <p className="mb-0 red_ff fs_14 text-color">
-                          04 January 2024
+                    <div
+                      style={{ height: "550px" }}
+                      className="overflow-auto mt-4"
+                    >
+                      <div className="d-flex mt-3 justify-content-between align-items-center">
+                        <div>
+                          <p className="mb-0 fs_16 red_ff dashboard-text-color fw-normal">
+                            Manual Recharge
+                          </p>
+                          <p className="mb-0 red_ff fs_14 text-color">
+                            04 January 2024
+                          </p>
+                        </div>
+                        <p className="fs_20 red_ff fw-semibold mb-0  dashboard-text-color">
+                          $1.33
                         </p>
                       </div>
-                      <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                        $103.21
-                      </p>
-                    </div>
-                    x<div className="border mt-3"></div>
-                    <div className="d-flex mt-3 justify-content-between align-items-center">
-                      <div>
-                        <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                          Manual Recharge
-                        </p>
-                        <p className="mb-0 red_ff fs_14 text-color">
-                          04 January 2024
-                        </p>
-                      </div>
-                      <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                        $2.36
-                      </p>
-                    </div>
-                    <div className="border mt-3"></div>
-                    <div className="d-flex mt-3 justify-content-between align-items-center">
-                      <div>
-                        <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                          Manual Recharge
-                        </p>
-                        <p className="mb-0 red_ff fs_14 text-color">
-                          04 January 2024
+                      <div className="border mt-3"></div>
+                      <div className="d-flex mt-3 justify-content-between align-items-center">
+                        <div>
+                          <p className="mb-0 fs_16 dashboard-text-color red_ff fw-normal">
+                            Auto Top-Up
+                          </p>
+                          <p className="mb-0 red_ff fs_14 text-color">
+                            04 January 2024
+                          </p>
+                        </div>
+                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
+                          $103.21
                         </p>
                       </div>
-                      <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                        $1.36
-                      </p>
-                    </div>
-                    <div className="border mt-3"></div>
-                    <div className="d-flex mt-3 justify-content-between align-items-center">
-                      <div>
-                        <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                          Auto Top-Up
-                        </p>
-                        <p className="mb-0 red_ff fs_14 text-color">
-                          04 January 2024
-                        </p>
-                      </div>
-                      <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                        $5.45
-                      </p>
-                    </div>
-                    <div className="border mt-3"></div>
-                    <div className="d-flex mt-3 justify-content-between align-items-center">
-                      <div>
-                        <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                          Auto Top-Up
-                        </p>
-                        <p className="mb-0 red_ff fs_14 text-color">
-                          04 January 2024
+                      <div className="border mt-3"></div>
+                      <div className="d-flex mt-3 justify-content-between align-items-center">
+                        <div>
+                          <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
+                            Manual Recharge
+                          </p>
+                          <p className="mb-0 red_ff fs_14 text-color">
+                            04 January 2024
+                          </p>
+                        </div>
+                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
+                          $2.36
                         </p>
                       </div>
-                      <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                        $5.45
-                      </p>
-                    </div>
-                    <div className="border mt-3"></div>
-                    <div className="d-flex mt-3 justify-content-between align-items-center">
-                      <div>
-                        <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                          Auto Top-Up
-                        </p>
-                        <p className="mb-0 red_ff fs_14 text-color">
-                          04 January 2024
+                      <div className="border mt-3"></div>
+                      <div className="d-flex mt-3 justify-content-between align-items-center">
+                        <div>
+                          <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
+                            Manual Recharge
+                          </p>
+                          <p className="mb-0 red_ff fs_14 text-color">
+                            04 January 2024
+                          </p>
+                        </div>
+                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
+                          $1.36
                         </p>
                       </div>
-                      <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                        $6.45
-                      </p>
+                      <div className="border mt-3"></div>
+                      <div className="d-flex mt-3 justify-content-between align-items-center">
+                        <div>
+                          <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
+                            Auto Top-Up
+                          </p>
+                          <p className="mb-0 red_ff fs_14 text-color">
+                            04 January 2024
+                          </p>
+                        </div>
+                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
+                          $5.45
+                        </p>
+                      </div>
+                      <div className="border mt-3"></div>
+                      <div className="d-flex mt-3 justify-content-between align-items-center">
+                        <div>
+                          <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
+                            Auto Top-Up
+                          </p>
+                          <p className="mb-0 red_ff fs_14 text-color">
+                            04 January 2024
+                          </p>
+                        </div>
+                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
+                          $5.45
+                        </p>
+                      </div>
+                      <div className="border mt-3"></div>
+                      <div className="d-flex mt-3 justify-content-between align-items-center">
+                        <div>
+                          <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
+                            Auto Top-Up
+                          </p>
+                          <p className="mb-0 red_ff fs_14 text-color">
+                            04 January 2024
+                          </p>
+                        </div>
+                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
+                          $5.45
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </Col>
@@ -406,23 +414,27 @@ const Home: React.FC = () => {
                     </Col>
                   </Row>
                 </div>
-                <Tab.Content className="mt-2">
+                <Tab.Content className="mt-2 h-100">
                   <Tab.Pane
                     eventKey="Manual"
-                    className={selectedTab === "Manual" ? "show active" : ""}
+                    className={
+                      selectedTab === "Manual" ? "show active h-100" : ""
+                    }
                   >
                     <Manual />
                   </Tab.Pane>
                   <Tab.Pane
                     eventKey="Auto"
-                    className={selectedTab === "Auto" ? "show active" : ""}
+                    className={
+                      selectedTab === "Auto" ? "show active h-100" : ""
+                    }
                   >
                     <Auto />
                   </Tab.Pane>
                   <Tab.Pane
                     eventKey="Subscription"
                     className={
-                      selectedTab === "Subscription" ? "show active" : ""
+                      selectedTab === "Subscription" ? "show active h-100" : ""
                     }
                   >
                     <Subscription />

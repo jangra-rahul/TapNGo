@@ -2,6 +2,7 @@
 import React from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import user from "../../../../public/assets/images/svg/userimg.svg";
+import edit_icon from "../../../assets/images/svg/edit_img.svg";
 import Image from "next/image";
 
 const SocialMedia = () => {
@@ -13,18 +14,25 @@ const SocialMedia = () => {
   return (
     <div className="bg-white mt-3">
       <Row className="mb-4 ps-3 pt-3 bg-white">
-        <Col className="d-flex align-items-center bg-white text-dark">
-          <Image
-            src={user}
-            alt="User"
-            className="rounded-circle me-3"
-            style={{ width: "80px", height: "80px" }}
-          />
-          <div>
-            <h3 className="fs_24 red_ff fw-bold">Andrew Jonson</h3>
-            <p className="mb-0">+01 234 567 890</p>
+        <div className="d-flex gap-3">
+          <div className="position-relative">
+            <Image src={user} alt="User" className="Image-fluid" />
+            <Image
+              src={edit_icon}
+              alt="edit_icon"
+              className="edit_icon cursor-pointer position-absolute bottom-0"
+              style={{ right: "-7px", cursor: "pointer" }}
+            />
           </div>
-        </Col>
+          <div className="mt-3 ms-3">
+            <p className="p-0 m-0 fs_24 red_ff fw-semibold text-dark">
+              Andrew Jonson
+            </p>
+            <p style={{ color: "#585858" }} className="fs_16 fw-medium red_ff">
+              +01 234 567 890
+            </p>
+          </div>
+        </div>
         <Row className="bg-white d-flex flex-column">
           <Form onSubmit={handleSubmit} className="mb-4 ps-3 pt-3">
             <Col xs={12} md={6}>

@@ -10,6 +10,7 @@ import CarRegistration from "./Carregisteration";
 import PostpaidAccountModal from "./PostpaidAccountModal";
 import "./profile.css";
 import Layout from "@/app/components/Layout/Laytout";
+import edit_icon from "../../../assets/images/svg/edit_img.svg";
 
 type ComponentType = "Profile" | "Cards" | "SocialMedia" | "CarRegistration";
 
@@ -82,24 +83,35 @@ const Profile = () => {
               <Row className="">
                 <Col xs={12}>
                   {activeComponent === "Profile" && (
-                    <Row className="justify-content-center bg-white  ps-md-3 ps-2">
+                    <Row className="justify-content-center bg-white mt-2 ps-md-3 ps-2">
                       <Col
                         xs={12}
                         md={6}
                         className="d-flex ps-md-2 ps-0 border-end border-end-3 border-2 justify-content-start flex-wrap"
                       >
                         <div className="pe-md-5">
-                          <div className="d-flex  mt-3">
-                            <Image
-                              src={user}
-                              alt="User"
-                              className="Image-fluid"
-                            />
+                          <div className="d-flex gap-3 mt-3">
+                            <div className="position-relative">
+                              <Image
+                                src={user}
+                                alt="User"
+                                className="Image-fluid"
+                              />
+                              <Image
+                                src={edit_icon}
+                                alt="edit_icon"
+                                className="edit_icon cursor-pointer position-absolute bottom-0"
+                                style={{ right: "-7px", cursor: "pointer" }}
+                              />
+                            </div>
                             <div className="mt-3 ms-3">
-                              <p className="p-0 m-0 mb-2 fs-24 red_ff fw-semibold text-dark">
+                              <p className="p-0 m-0 fs_24 red_ff fw-semibold text-dark">
                                 Andrew Jonson
                               </p>
-                              <p className="fs_16 fw-medium red_ff text-dark">
+                              <p
+                                style={{ color: "#585858" }}
+                                className="fs_16 fw-medium red_ff"
+                              >
                                 +01 234 567 890
                               </p>
                             </div>

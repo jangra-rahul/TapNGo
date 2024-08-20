@@ -120,10 +120,12 @@ const Navbar = () => {
                           width={38}
                           height={33}
                         />
-                        <div className="d-md-block d-none">
-                          <h6 className="mb-0 fs_14">Sagar M.</h6>
-                          <p className="mb-0 fs_13 mt-1">#23543</p>
-                        </div>
+                        {isOpen && (
+                          <div className="d-md-block d-none">
+                            <h6 className="mb-0 fs_14">Sagar M.</h6>
+                            <p className="mb-0 fs_13 mt-1">#23543</p>
+                          </div>
+                        )}
                       </div>
                     </Accordion.Header>
                     <Accordion.Body
@@ -142,6 +144,7 @@ const Navbar = () => {
                         <p className="mb-0 color_lightblack red_ff ">Log out</p>
                       </Link>
                     </Accordion.Body>
+                    {/* </div> */}
                   </Accordion.Item>
                 </Accordion>
               </div>

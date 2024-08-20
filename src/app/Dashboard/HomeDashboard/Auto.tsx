@@ -35,8 +35,8 @@ const Auto: React.FC = () => {
   const handleModalShow = () => setShowModal(true);
 
   return (
-    <Container>
-      <div className="d-flex flex-column justify-content-between h-vh-100">
+    <Container className="px-0 h-100">
+      <div className="d-flex flex-column justify-content-between h-100">
         <div>
           <p className="mb-0 fs_14 fw-normal red_ff dashboard-text-color">
             With auto recharge, we will recharge your card / fob when your
