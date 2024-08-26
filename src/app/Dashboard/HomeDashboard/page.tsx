@@ -334,7 +334,7 @@ const Home: React.FC = () => {
                       </a>
                     </div>
                     <div
-                      style={{ height: "550px" }}
+                      style={{ height: "400px" }}
                       className="overflow-auto mt-4"
                     >
                       <div className="d-flex mt-3 justify-content-between align-items-center">

@@ -131,7 +131,7 @@ const Usages: React.FC = () => {
       <div className="px-1">
         <div
           className="bg-white mt-3 custom-padding rounded-2"
-          style={{ minHeight: "84vh" }}
+          style={{ minHeight: "82vh" }}
         >
           <Row>
             <Col xs={12} md={8}>
