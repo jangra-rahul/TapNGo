@@ -80,7 +80,7 @@ const Home: React.FC = () => {
         <div className={`${showModal === true && "custom_all_dark"}`}></div>
       )}
       <div style={{ height: "94%" }} className="px-2">
-        <div className="pb-4 pt-3 h-100 ps-2">
+        <div className="pb-3 pt-3 h-100 ps-2">
           <Row className="h-100">
             <Col xl={7} className="pe-4">
               <Row className="h-100">
