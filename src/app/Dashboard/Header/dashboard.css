@@ -202,3 +202,7 @@
     width: 100vw !important;
   }
 }
+
+.accordion-button {
+  padding: 4px !important;
+}

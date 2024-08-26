@@ -28,41 +28,46 @@ const SelectCreditCardModal: React.FC<DownloadCardModalProps> = ({
           <Modal.Title className="fs_24 text-center fw-semibold mb-2 m-0 p-0 red_ff dashboard-text-color">
             Choose Your Credit Mode
           </Modal.Title>
-          <div className="d-flex ps-4 pt-3 align-items-start  mt-3">
-            <input
-              type="radio"
-              name="id"
-              id="id"
-              className="me-2 mt-2"
-              style={{
-                width: "30px",
-                height: "40px",
-                backgroundColor: "white",
-              }}
-            />
-            <label className="pb-2 mb-0 fs_18 red_ff" htmlFor="id">
+          <div className="d-flex gap-4 ps-4 pt-3 align-items-start  mt-3">
+            <label className="container3 mt-2">
+              <input
+                type="radio"
+                name="id"
+                id="id"
+                className="me-2 "
+                style={{
+                  width: "30px",
+                  height: "40px",
+                  backgroundColor: "white",
+                }}
+              />
+              <span className="checkmark"></span>
+            </label>
+            <label className=" mb-0 fs_18 red_ff" htmlFor="id">
               I want to collect the cards from the business<br></br> location
               between 10 A.M. to 5 P.M.
             </label>
           </div>
-          <div className="d-flex ps-4 align-items-start  mt-3">
-            <input
-              type="radio"
-              name="id"
-              id="id1"
-              className="me-2 mt-2"
-              style={{
-                width: "30px",
-                height: "40px",
-                backgroundColor: "white",
-              }}
-            />
-            <label className="pb-2 fs_18 red_ff" htmlFor="id1">
+          <div className="d-flex ps-4 gap-4 align-items-start  mt-3">
+            <label className="container3 mt-2">
+              <input
+                type="radio"
+                name="id"
+                id="id1"
+                className="me-2 "
+                style={{
+                  width: "30px",
+                  height: "40px",
+                  backgroundColor: "white",
+                }}
+              />
+              <span className="checkmark"></span>
+            </label>
+            <label className=" fs_18 red_ff" htmlFor="id1">
               I want to receive it in mail which will take 7<br></br> business
               days.
             </label>
           </div>
-
           <Button
             onClick={handleCloseCreditCardModal}
             variant="primary"

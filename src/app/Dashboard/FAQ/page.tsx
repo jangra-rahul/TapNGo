@@ -83,7 +83,7 @@ const FrequentlyAskedQuestion = () => {
                     eventKey="1"
                     className="border border_black rounded-2 dashboard-text-color  fs_13  red_ff"
                   >
-                    <Accordion.Header className="border-bottom-radius dashboard-text-color fs_14 fw-semibold red_ff">
+                    <Accordion.Header className="dashboard-text-color fs_14 fw-semibold red_ff">
                       <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                         How can I add funds to my account?
                       </div>
@@ -92,6 +92,7 @@ const FrequentlyAskedQuestion = () => {
                     </Accordion.Header>
 
                     <Accordion.Body>
+                      <div className="border mb-3"></div>
                       <p className=" fs_13 ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -109,7 +110,7 @@ const FrequentlyAskedQuestion = () => {
                     eventKey="2"
                     className="border border_black  mt-3 rounded-2 "
                   >
-                    <Accordion.Header className=" border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
+                    <Accordion.Header className="  dashboard-text-color  fs_14 fw-semibold red_ff">
                       <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                         What payment methods are supported for topping up my
                         account?
@@ -118,6 +119,7 @@ const FrequentlyAskedQuestion = () => {
                       <hr />
                     </Accordion.Header>
                     <Accordion.Body>
+                      <div className="border mb-3"></div>
                       <p className=" fs_13">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -135,7 +137,7 @@ const FrequentlyAskedQuestion = () => {
                     eventKey="3"
                     className="border border_black mt-3 rounded-2"
                   >
-                    <Accordion.Header className=" border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
+                    <Accordion.Header className="  dashboard-text-color  fs_14 fw-semibold red_ff">
                       <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                         Is there a minimum or maximum limit for money top-ups?
                       </div>
@@ -143,6 +145,7 @@ const FrequentlyAskedQuestion = () => {
                       <hr />
                     </Accordion.Header>
                     <Accordion.Body>
+                      <div className="border mb-3"></div>
                       <p className=" fs_13">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -160,7 +163,7 @@ const FrequentlyAskedQuestion = () => {
                     eventKey="4"
                     className="border border_black mt-3 rounded-2"
                   >
-                    <Accordion.Header className=" border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
+                    <Accordion.Header className="  dashboard-text-color  fs_14 fw-semibold red_ff">
                       <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                         How long does it take for my account to reflect the
                         newly added funds?
@@ -169,6 +172,7 @@ const FrequentlyAskedQuestion = () => {
                       <hr />
                     </Accordion.Header>
                     <Accordion.Body>
+                      <div className="border mb-3"></div>
                       <p className=" fs_13">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -186,7 +190,7 @@ const FrequentlyAskedQuestion = () => {
                     eventKey="5"
                     className="border border_black mt-3 "
                   >
-                    <Accordion.Header className=" border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
+                    <Accordion.Header className="  dashboard-text-color  fs_14 fw-semibold red_ff">
                       <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                         Are there any fees associated with topping up my
                         account?
@@ -194,6 +198,7 @@ const FrequentlyAskedQuestion = () => {
                       <hr />
                     </Accordion.Header>
                     <Accordion.Body>
+                      <div className="border mb-3"></div>
                       <p className=" fs_13">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -225,7 +230,7 @@ const FrequentlyAskedQuestion = () => {
                       eventKey="1"
                       className="border border_black  "
                     >
-                      <Accordion.Header className=" border-bottom-radius dashboard-text-color  fs_14 fw-semibold red_ff">
+                      <Accordion.Header className=" dashboard-text-color  fs_14 fw-semibold red_ff">
                         <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                           How can I add funds to my account?
                         </div>
@@ -233,6 +238,7 @@ const FrequentlyAskedQuestion = () => {
                         <hr />
                       </Accordion.Header>
                       <Accordion.Body>
+                        <div className="border mb-3"></div>
                         <p className=" fs_13">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -250,7 +256,7 @@ const FrequentlyAskedQuestion = () => {
                       eventKey="2"
                       className="border border_black mt-3 "
                     >
-                      <Accordion.Header className=" border-bottom-radius">
+                      <Accordion.Header className=" ">
                         <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                           What payment methods are supported for topping up my
                           account?
@@ -259,6 +265,7 @@ const FrequentlyAskedQuestion = () => {
                         <hr />
                       </Accordion.Header>
                       <Accordion.Body>
+                        <div className="border mb-3"></div>
                         <p className=" fs_13">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -276,7 +283,7 @@ const FrequentlyAskedQuestion = () => {
                       eventKey="3"
                       className="border border_black mt-3 "
                     >
-                      <Accordion.Header className=" border-bottom-radius">
+                      <Accordion.Header className=" ">
                         <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                           Is there a minimum or maximum limit for money top-ups?
                         </div>
@@ -284,6 +291,7 @@ const FrequentlyAskedQuestion = () => {
                         <hr />
                       </Accordion.Header>
                       <Accordion.Body>
+                        <div className="border mb-3"></div>
                         <p className=" fs_13">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -301,7 +309,7 @@ const FrequentlyAskedQuestion = () => {
                       eventKey="4"
                       className="border border_black mt-3 "
                     >
-                      <Accordion.Header className=" border-bottom-radius">
+                      <Accordion.Header className=" ">
                         <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                           How long does it take for my account to reflect the
                           newly added funds?
@@ -309,6 +317,7 @@ const FrequentlyAskedQuestion = () => {
                         <hr />
                       </Accordion.Header>
                       <Accordion.Body>
+                        <div className="border mb-3"></div>
                         <p className=" fs_13">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et
@@ -326,7 +335,7 @@ const FrequentlyAskedQuestion = () => {
                       eventKey="5"
                       className="border border_black mt-3 "
                     >
-                      <Accordion.Header className=" border-bottom-radius">
+                      <Accordion.Header className=" ">
                         <div className="dashboard-text-color  fs_14 fw-semibold red_ff">
                           Are there any fees associated with topping up my
                           account?
@@ -335,6 +344,7 @@ const FrequentlyAskedQuestion = () => {
                         <hr />
                       </Accordion.Header>
                       <Accordion.Body>
+                        <div className="border mb-3"></div>
                         <p className=" fs_13">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor incididunt ut labore et

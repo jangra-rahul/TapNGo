@@ -109,8 +109,12 @@ const Register = () => {
           controlId="formTAndC"
           className="mt-2 d-flex align-items-center"
         >
-          <Form.Check type="checkbox" id="accept" className="me-2" />
-          <Form.Label className="fs_14 mt-2 red_ff text-black fw-medium">
+          {/* <Form.Check type="checkbox" id="accept" className="me-2" /> */}
+          <label className="container2 ">
+            <input id="accept" type="checkbox" />
+            <span className="checkmark"></span>
+          </label>
+          <Form.Label className="fs_14 mt-3 mb-0 red_ff text-black fw-medium">
             I accept
             <a onClick={openVehicleModal} href="#" className="ms-1 me-1 tdn">
               T&C

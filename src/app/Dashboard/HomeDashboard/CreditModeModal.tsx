@@ -32,61 +32,70 @@ const CreditModeModal: React.FC<DownloadCardModalProps> = ({
           closeButton
           className="border-0  m-0 p-0 pt-4 pe-4"
         ></Modal.Header>
-        <Modal.Body className="text-center dashboard-text-color">
+        <Modal.Body className="text-center dashboard-text-color px-4">
           <Modal.Title className="fs_24 fw-semibold text-center mb-2 m-0 p-0 red_ff dashboard-text-color">
             Choose Your Credit Mode
           </Modal.Title>
-          <div className="d-flex pt-3 align-items-center mt-3">
-            <input
-              type="radio"
-              name="creditMode"
-              id="physical"
-              value="physical"
-              onChange={() => setSelectedCard("physical")}
-              className="me-2"
-              style={{
-                width: "30px",
-                height: "40px",
-                backgroundColor: "white",
-              }}
-            />
-            <label className="pb-2 fs_18 red_ff" htmlFor="physical">
+          <div className="d-flex gap-4 pt-3 align-items-center mt-3">
+            <label className="container3">
+              <input
+                type="radio"
+                name="creditMode"
+                id="physical"
+                value="physical"
+                onChange={() => setSelectedCard("physical")}
+                className="me-2"
+                style={{
+                  width: "30px",
+                  height: "40px",
+                  backgroundColor: "white",
+                }}
+              />
+              <span className="checkmark"></span>
+            </label>
+            <label className=" fs_18 red_ff" htmlFor="physical">
               Physical Card *
             </label>
           </div>
-          <div className="d-flex align-items-center mt-3">
-            <input
-              type="radio"
-              name="creditMode"
-              id="digital"
-              value="digital"
-              onChange={() => setSelectedCard("digital")}
-              className="me-2"
-              style={{
-                width: "30px",
-                height: "40px",
-                backgroundColor: "white",
-              }}
-            />
-            <label className="pb-2 fs_18 red_ff" htmlFor="digital">
+          <div className=" d-flex gap-4 align-items-center mt-3">
+            <label className="container3">
+              <input
+                type="radio"
+                name="creditMode"
+                id="digital"
+                value="digital"
+                onChange={() => setSelectedCard("digital")}
+                className="me-2"
+                style={{
+                  width: "30px",
+                  height: "40px",
+                  backgroundColor: "white",
+                }}
+              />
+              <span className="checkmark"></span>
+            </label>
+            <label className=" fs_18 red_ff" htmlFor="digital">
               Digital Card
             </label>
           </div>
-          <div className="d-flex align-items-center mt-3">
-            <input
-              type="radio"
-              name="creditMode"
-              id="both"
-              value="both"
-              onChange={() => setSelectedCard("both")}
-              className="me-2"
-              style={{
-                width: "30px",
-                height: "40px",
-                backgroundColor: "white",
-              }}
-            />
-            <label className="pb-2 fs_18 red_ff" htmlFor="both">
+          <div className="d-flex mb-3 gap-4 align-items-center mt-3">
+            <label className="container3">
+              <input
+                type="radio"
+                name="creditMode"
+                id="both"
+                value="both"
+                onChange={() => setSelectedCard("both")}
+                className="me-2"
+                style={{
+                  width: "30px",
+                  height: "40px",
+                  backgroundColor: "white",
+                }}
+              />
+              <span className="checkmark"></span>
+            </label>
+            <label className=" fs_18 red_ff" htmlFor="both">
               Both
             </label>
           </div>

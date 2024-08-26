@@ -128,3 +128,21 @@
 :where(.css-1uq9j6g).ant-menu .ant-menu-submenu-title {
   border-radius: 0 !important;
 }
+
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-menu-inline .ant-menu-item,
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-menu-vertical .ant-menu-item,
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-menu-inline
+  .ant-menu-submenu-title,
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-menu-vertical
+  .ant-menu-submenu-title {
+  height: 40px;
+  line-height: 40px;
+  padding-inline: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-inline: 0px !important;
+  margin-block: 4px;
+  /* width: calc(100% - 8px); */
+  width: 100% !important;
+  border-radius: 0;
+}

@@ -68,11 +68,11 @@ const Admindashboard: React.FC = () => {
             height: "100vh",
           }}
         >
-          <div>
+          <div className="">
             <Link href="#">
-              <div>
+              <div className="ps-4">
                 <Image
-                  className="px-3 p-4"
+                  className="px-3 p-4 "
                   src={logo}
                   alt="logo"
                   width={200}
@@ -84,11 +84,13 @@ const Admindashboard: React.FC = () => {
               <Menu.Item
                 key="1"
                 className={
-                  pathname === "/Dashboard/HomeDashboard" ? "active-color" : ""
+                  pathname === "/Dashboard/HomeDashboard"
+                    ? "active-color text-white"
+                    : ""
                 }
               >
                 <Link href="/Dashboard/HomeDashboard">
-                  <div className="d-flex gap-2  align-items-center">
+                  <div className="d-flex gap-2  align-items-center ps-4">
                     <Image
                       src={home_icon}
                       alt="home_icon"
@@ -102,11 +104,13 @@ const Admindashboard: React.FC = () => {
               <Menu.Item
                 key="2"
                 className={
-                  pathname === "/Dashboard/Usages" ? "active-color" : ""
+                  pathname === "/Dashboard/Usages"
+                    ? "active-color text-white"
+                    : ""
                 }
               >
                 <Link href="/Dashboard/Usages">
-                  <div className="d-flex gap-2  align-items-center">
+                  <div className="d-flex gap-2  align-items-center ps-4">
                     <Image
                       src={usage_icon}
                       alt="Usage_icon"
@@ -121,12 +125,12 @@ const Admindashboard: React.FC = () => {
                 key="3"
                 className={
                   pathname === "/Dashboard/Subcriptiondashboard"
-                    ? "active-color"
+                    ? "active-color text-white"
                     : ""
                 }
               >
                 <Link href="/Dashboard/Subcriptiondashboard">
-                  <div className="d-flex gap-2  align-items-center">
+                  <div className="d-flex gap-2  align-items-center ps-4">
                     <Image
                       src={subscription_icon}
                       alt="Subscription_icon"
@@ -140,11 +144,13 @@ const Admindashboard: React.FC = () => {
               <Menu.Item
                 key="4"
                 className={
-                  pathname === "/Dashboard/FamilyMember" ? "active-color" : ""
+                  pathname === "/Dashboard/FamilyMember"
+                    ? "active-color text-white"
+                    : ""
                 }
               >
                 <Link href="/Dashboard/FamilyMember">
-                  <div className="d-flex gap-2  align-items-center">
+                  <div className="d-flex gap-2  align-items-center ps-4">
                     <Image
                       src={Family_icon}
                       alt="FamilyM_icon"
@@ -158,11 +164,13 @@ const Admindashboard: React.FC = () => {
               <Menu.Item
                 key="5"
                 className={
-                  pathname === "/Dashboard/MyOffers" ? "active-color" : ""
+                  pathname === "/Dashboard/MyOffers"
+                    ? "active-color text-white"
+                    : ""
                 }
               >
                 <Link href="/Dashboard/MyOffers">
-                  <div className="d-flex gap-2  align-items-center">
+                  <div className="d-flex gap-2  align-items-center ps-4">
                     <Image
                       src={Offers_icon}
                       alt="Offer_icon"
@@ -175,10 +183,12 @@ const Admindashboard: React.FC = () => {
               </Menu.Item>
               <Menu.Item
                 key="6"
-                className={pathname === "/Dashboard/FAQ" ? "active-color" : ""}
+                className={
+                  pathname === "/Dashboard/FAQ" ? "active-color text-white" : ""
+                }
               >
                 <Link href="/Dashboard/FAQ">
-                  <div className="d-flex gap-2  align-items-center">
+                  <div className="d-flex gap-2 align-items-center ps-4">
                     <Image
                       src={Faq_icon}
                       alt="faq_icon"
@@ -192,11 +202,13 @@ const Admindashboard: React.FC = () => {
               <Menu.Item
                 key="7"
                 className={
-                  pathname === "/Dashboard/SupportPage" ? "active-color" : ""
+                  pathname === "/Dashboard/SupportPage"
+                    ? "active-color text-white"
+                    : ""
                 }
               >
                 <Link href="/Dashboard/SupportPage">
-                  <div className="d-flex gap-2  align-items-center">
+                  <div className="d-flex gap-2  align-items-center  ps-4">
                     <Image
                       src={Support_icon}
                       alt="Support_icon"
@@ -209,7 +221,7 @@ const Admindashboard: React.FC = () => {
               </Menu.Item>
             </Menu>
 
-            <Footer className="footer fs_14 ">
+            <Footer className="footer fs_14 ps-4">
               <p className="m-0 p-0 fs_14 red_ff font-light bg-p ps-2">
                 © 2024. Adopt Cashless.
               </p>

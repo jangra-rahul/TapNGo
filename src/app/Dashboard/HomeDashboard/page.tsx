@@ -454,7 +454,7 @@ const Home: React.FC = () => {
                       <div className="d-flex mt-3 mt-sm-0 text-color align-items-center gap-3">
                         <p>Auto Top-up</p>
                         <div className="border rounded-5 mb-3 m-0 ">
-                          <Form className="border-1  rounded-1  ps-1 pe-2 d-flex justify-content-center">
+                          <Form className="border-1  rounded-1 p-1 d-flex justify-content-center">
                             <Form.Check
                               type="switch"
                               id="custom-switch"
