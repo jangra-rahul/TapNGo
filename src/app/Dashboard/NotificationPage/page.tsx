@@ -172,7 +172,7 @@ const NotificationPage = () => {
                             id="accept"
                             type="checkbox"
                           />
-                          <span className="checkmark"></span>
+                          <span className="checkmark1"></span>
                         </label>
                       </Col>
                       <Col
