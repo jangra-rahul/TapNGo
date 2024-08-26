@@ -79,7 +79,7 @@ const Home: React.FC = () => {
       {showModal && (
         <div className={`${showModal === true && "custom_all_dark"}`}></div>
       )}
-      <div style={{ height: "96%" }} className="px-2">
+      <div style={{ height: "94%" }} className="px-2">
         <div className="pb-4 pt-3 h-100 ps-2">
           <Row className="h-100">
             <Col xl={7} className="pe-4">
@@ -240,76 +240,6 @@ const Home: React.FC = () => {
                             $103.21
                           </p>
                         </div>
-                        <div className="border mt-3"></div>
-                        <div className="d-flex mt-3 justify-content-between align-items-center">
-                          <div>
-                            <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                              Manual Recharge
-                            </p>
-                            <p className="mb-0 red_ff fs_14 text-color">
-                              04 January 2024
-                            </p>
-                          </div>
-                          <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                            $2.36
-                          </p>
-                        </div>
-                        <div className="border mt-3"></div>
-                        <div className="d-flex mt-3 justify-content-between align-items-center">
-                          <div>
-                            <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                              Manual Recharge
-                            </p>
-                            <p className="mb-0 red_ff fs_14 text-color">
-                              04 January 2024
-                            </p>
-                          </div>
-                          <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                            $1.36
-                          </p>
-                        </div>
-                        <div className="border mt-3"></div>
-                        <div className="d-flex mt-3 justify-content-between align-items-center">
-                          <div>
-                            <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                              Auto Top-Up
-                            </p>
-                            <p className="mb-0 red_ff fs_14 text-color">
-                              04 January 2024
-                            </p>
-                          </div>
-                          <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                            $5.45
-                          </p>
-                        </div>
-                        <div className="border mt-3"></div>
-                        <div className="d-flex mt-3 justify-content-between align-items-center">
-                          <div>
-                            <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                              Auto Top-Up
-                            </p>
-                            <p className="mb-0 red_ff fs_14 text-color">
-                              04 January 2024
-                            </p>
-                          </div>
-                          <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                            $5.45
-                          </p>
-                        </div>
-                        <div className="border mt-3"></div>
-                        <div className="d-flex mt-3 justify-content-between align-items-center">
-                          <div>
-                            <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                              Auto Top-Up
-                            </p>
-                            <p className="mb-0 red_ff fs_14 text-color">
-                              04 January 2024
-                            </p>
-                          </div>
-                          <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                            $5.45
-                          </p>
-                        </div>
                       </div>
                     </div>
                   </Col>
@@ -390,34 +320,6 @@ const Home: React.FC = () => {
                         </div>
                         <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
                           $1.36
-                        </p>
-                      </div>
-                      <div className="border mt-3"></div>
-                      <div className="d-flex mt-3 justify-content-between align-items-center">
-                        <div>
-                          <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                            Auto Top-Up
-                          </p>
-                          <p className="mb-0 red_ff fs_14 text-color">
-                            04 January 2024
-                          </p>
-                        </div>
-                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                          $5.45
-                        </p>
-                      </div>
-                      <div className="border mt-3"></div>
-                      <div className="d-flex mt-3 justify-content-between align-items-center">
-                        <div>
-                          <p className="mb-0 dashboard-text-color fs_16 red_ff fw-normal">
-                            Auto Top-Up
-                          </p>
-                          <p className="mb-0 red_ff fs_14 text-color">
-                            04 January 2024
-                          </p>
-                        </div>
-                        <p className="fs_20 red_ff fw-semibold mb-0 dashboard-text-color">
-                          $5.45
                         </p>
                       </div>
                       <div className="border mt-3"></div>
