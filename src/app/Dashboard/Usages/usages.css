@@ -133,7 +133,7 @@
 }
 
 .table-responsive {
-  max-height: 250px; /* yeh height aapke hisaab se set karein */
+  max-height: 300px; /* yeh height aapke hisaab se set karein */
 
   overflow-y: auto;
 }

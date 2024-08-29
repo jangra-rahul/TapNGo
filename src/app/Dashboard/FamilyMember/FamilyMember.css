@@ -29,8 +29,8 @@
 }
 .circle {
   display: inline-block;
-  height: 54px;
-  width: 54px;
+  height: 52px;
+  width: 52px;
 }
 
 .bg-0 {
@@ -73,9 +73,9 @@
 
 /* Global styles */
 .circle {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
+  width: 38px;
+  height: 38px;
+  margin: 8px;
 }
 
 /* Style for the input field */

@@ -40,7 +40,7 @@ const FamilyMember = () => {
       <div className="px-2">
         <div
           className="py-1 mt-3 px-4 rounded-2 bg-white"
-          style={{ minHeight: "82vh" }}
+          style={{ minHeight: "84vh" }}
         >
           <h1 className="pb-2 fw-semibold fs_28  red_ff dashboard-text-color pt-4">
             Family Members

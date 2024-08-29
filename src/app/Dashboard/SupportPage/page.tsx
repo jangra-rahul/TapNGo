@@ -139,7 +139,7 @@ const Support = () => {
           <div className="border-rounded">
             <Row
               className=" py-3 mt-4 p-sm-0 rounded-3 bg-white "
-              style={{ minHeight: "82vh" }}
+              style={{ minHeight: "84vh" }}
             >
               <Col className="px-4 pt-2 ">
                 <div className="d-flex align-items-center justify-content-between mt-3 pb-2 ">

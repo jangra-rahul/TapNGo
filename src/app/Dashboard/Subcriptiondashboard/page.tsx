@@ -63,14 +63,14 @@ const Subscription = () => {
         <div className="px-2">
           <div
             className="rounded-2 p-md-4 p-3 mt-4 bg-white"
-            style={{ minHeight: "82vh" }}
+            style={{ minHeight: "84vh" }}
           >
             <Row className="align-items-center">
               <Col xs={12} className="ms-md-2">
                 <h1 className="fs_24 fw-semibold pt-md-3 red_ff dashboard-text-color">
                   Subscription
                 </h1>
-                <p className="fs_16 mb-md-2 fw-normal mb-0 pt-1 red_ff sub-text-color ">
+                <p className="fs_16 mb-md-4 fw-normal mb-0 pt-1 red_ff sub-text-color ">
                   Take your desired plan to get access to our content easily,
                   <br /> we like to offer special license offer to our users.
                 </p>
